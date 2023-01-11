@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-example
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-team-example
+      server: https://kubernetes.default.svc
+    - namespace: product-team-example-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-bpdm. Read only on project itself
+      policies:
+        - p, proj:product-team-example:team-admin, applications, *, product-team-example/*, allow
+        - p, proj:product-team-example:team-admin, exec, create, product-team-example/*, allow
+      groups:
+        - catenax-ng:product-team-example
