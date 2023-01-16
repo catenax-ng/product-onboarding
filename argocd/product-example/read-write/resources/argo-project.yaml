@@ -11,7 +11,7 @@ spec:
       server: https://kubernetes.default.svc
   roles:
     - name: team-admin
-      description: All access to applications inside project-bpdm. Read only on project itself
+      description: All access to applications inside project-example. Read only on project itself
       policies:
         - p, proj:product-team-example:team-admin, applications, *, product-team-example/*, allow
         - p, proj:product-team-example:team-admin, exec, create, product-team-example/*, allow
