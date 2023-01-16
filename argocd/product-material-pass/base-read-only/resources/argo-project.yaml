@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-material-pass
+  namespace: argocd
+spec:
+  description: Project for team material-pass
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-material-pass
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-material-pass:project-read-only, applications, get, project-material-pass/*, allow
+        - p, proj:project-material-pass:team-admin, exec, create, project-material-pass/*, allow
+      groups:
+        - catenax-ng:product-material-pass
+        - catenax-ng:release-management
+        - catenax-ng:test-management

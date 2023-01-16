@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-value-added-service
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-value-added-service
+      server: https://kubernetes.default.svc
+    - namespace: product-value-added-service-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-value-added-service.
+      policies:
+        - p, proj:product-value-added-service:team-admin, applications, *, product-value-added-service/*, allow
+        - p, proj:product-value-added-service:team-admin, exec, create, product-value-added-service/*, allow
+      groups:
+        - catenax-ng:product-value-added-service

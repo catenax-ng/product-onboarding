@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-product-data-format-transformer
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-product-data-format-transformer
+      server: https://kubernetes.default.svc
+    - namespace: product-product-data-format-transformer-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-product-data-format-transformer.
+      policies:
+        - p, proj:product-product-data-format-transformer:team-admin, applications, *, product-product-data-format-transformer/*, allow
+        - p, proj:product-product-data-format-transformer:team-admin, exec, create, product-product-data-format-transformer/*, allow
+      groups:
+        - catenax-ng:product-product-data-format-transformer

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: product-portal-pen
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: product-iam-pen

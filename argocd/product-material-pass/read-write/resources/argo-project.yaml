@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-material-pass
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-material-pass
+      server: https://kubernetes.default.svc
+    - namespace: product-material-pass-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-material-pass.
+      policies:
+        - p, proj:product-material-pass:team-admin, applications, *, product-material-pass/*, allow
+        - p, proj:product-material-pass:team-admin, exec, create, product-material-pass/*, allow
+      groups:
+        - catenax-ng:product-material-pass

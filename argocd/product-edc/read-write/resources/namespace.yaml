@@ -1,0 +1,38 @@
+# ToDo: How to handle env specific namespaces? Currently there are no resources deployed to this ns
+# https://github.com/catenax-ng/k8s-cluster-stack/blob/main/environments/hotel-budapest/argo-projects/product-edc.yaml#L6-L25
+#
+# I would tend to remove these env specific NS and inform product team.
+#
+# Configured NS on DEV
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: product-edc-pen
+---
+# Todo: unused NS on DEV environment, no resources in there
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev-product-edc
+---
+# Configured NS on INT
+---
+# Todo: unused NS on DEV environment, no resources in there
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: int-product-edc
+---
+# Todo: unused NS on INT environment, no resources in there
+# maybe misunderstanding and NS product-catenax-at-home was intended?
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: catenax-at-home
+---
+# Todo: unused NS on INT environment, no resources in there
+# maybe misunderstanding and NS product-catenax-at-home-pen was intended?
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: catenax-at-home-pen
