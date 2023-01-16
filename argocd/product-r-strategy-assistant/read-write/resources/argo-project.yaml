@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-r-strategy-assistant
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-r-strategy-assistant
+      server: https://kubernetes.default.svc
+    - namespace: product-r-strategy-assistant-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-r-strategy-assistant.
+      policies:
+        - p, proj:product-r-strategy-assistant:team-admin, applications, *, product-r-strategy-assistant/*, allow
+        - p, proj:product-r-strategy-assistant:team-admin, exec, create, product-r-strategy-assistant/*, allow
+      groups:
+        - catenax-ng:product-r-strategy-assistant
