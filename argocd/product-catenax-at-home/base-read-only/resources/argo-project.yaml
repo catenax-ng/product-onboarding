@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-catenax-at-home
+  namespace: argocd
+spec:
+  description: Project for team Catena-X @ Home
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-catenax-at-home
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-catenax-at-home:project-read-only, applications, get, project-catenax-at-home/*, allow
+        - p, proj:project-catenax-at-home:team-admin, exec, create, project-catenax-at-home/*, allow
+      groups:
+        - catenax-ng:product-catenax-at-home
+        - catenax-ng:release-management
+        - catenax-ng:test-management
