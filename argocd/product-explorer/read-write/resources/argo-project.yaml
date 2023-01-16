@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-explorer
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-explorer
+      server: https://kubernetes.default.svc
+    - namespace: product-explorer-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-explorer.
+      policies:
+        - p, proj:product-explorer:team-admin, applications, *, product-explorer/*, allow
+        - p, proj:product-explorer:team-admin, exec, create, product-explorer/*, allow
+      groups:
+        - catenax-ng:product-explorer
