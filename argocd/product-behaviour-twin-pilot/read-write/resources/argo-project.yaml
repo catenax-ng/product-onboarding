@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-behaviour-twin-pilot
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-behaviour-twin-pilot
+      server: https://kubernetes.default.svc
+    - namespace: product-behaviour-twin-pilot-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-behaviour-twin-pilot.
+      policies:
+        - p, proj:product-behaviour-twin-pilot:team-admin, applications, *, product-behaviour-twin-pilot/*, allow
+        - p, proj:product-behaviour-twin-pilot:team-admin, exec, create, product-behaviour-twin-pilot/*, allow
+      groups:
+        - catenax-ng:product-behaviour-twin-pilot
