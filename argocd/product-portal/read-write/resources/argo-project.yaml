@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-portal
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-portal
+      server: https://kubernetes.default.svc
+    - namespace: product-iam
+      server: https://kubernetes.default.svc
+    - namespace: product-portal-pen
+      server: https://kubernetes.default.svc
+    - namespace: product-iam-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-portal.
+      policies:
+        - p, proj:product-portal:team-admin, applications, *, product-portal/*, allow
+        - p, proj:product-portal:team-admin, exec, create, product-portal/*, allow
+      groups:
+        - catenax-ng:product-portal
