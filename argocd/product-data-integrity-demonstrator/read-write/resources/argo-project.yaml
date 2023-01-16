@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-data-integrity-demonstrator
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-data-integrity-demonstrator
+      server: https://kubernetes.default.svc
+    - namespace: product-data-integrity-demonstrator-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-data-integrity-demonstrator.
+      policies:
+        - p, proj:product-data-integrity-demonstrator:team-admin, applications, *, product-data-integrity-demonstrator/*, allow
+        - p, proj:product-data-integrity-demonstrator:team-admin, exec, create, product-data-integrity-demonstrator/*, allow
+      groups:
+        - catenax-ng:product-data-integrity-demonstrator
