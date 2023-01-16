@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-et-demonstrators
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-et-demonstrators
+      server: https://kubernetes.default.svc
+    - namespace: product-et-demonstrators-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-et-demonstrators.
+      policies:
+        - p, proj:product-et-demonstrators:team-admin, applications, *, product-et-demonstrators/*, allow
+        - p, proj:product-et-demonstrators:team-admin, exec, create, product-et-demonstrators/*, allow
+      groups:
+        - catenax-ng:product-et-demonstrators
