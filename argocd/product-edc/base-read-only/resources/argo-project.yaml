@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-edc
+  namespace: argocd
+spec:
+  description: Project for team EDC
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-edc
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-edc:project-read-only, applications, get, project-edc/*, allow
+        - p, proj:project-edc:team-admin, exec, create, project-edc/*, allow
+      groups:
+        - catenax-ng:product-edc
+        - catenax-ng:release-management
+        - catenax-ng:test-management
