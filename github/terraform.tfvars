@@ -1,13 +1,17 @@
-#github_teams = {
-#    "argocdadmins" : {
-#      "name" : "argocdadmins",
-#      "description" : "ArgoCD OAuth administrator team"
+# Explanation for the Structure of the Variables with provide for terraform scripts
+#
+# Structure of Github Teams resolve <variable> with namingpattern
+# github_teams = {
+#    "<new-team-object>" : {
+#      "name" : "<new-team-name>",
+#      "description" : "<new-gh-team-description>"
 #    },
 #}
 #
+# Structure of Github Repostitorys resolve <variable> with namingpattern
 #github_repositories = {
-#  "playground-target" : {
-#    name : "playground-target"
+#  "<new-team-repository-object>" : {
+#    name : "<new-repository-name>"
 #    team_name : ""
 #    description : ""
 #    visibility : "public"
@@ -21,19 +25,20 @@
 #    uses_template : false
 #    template : {
 #      owner : "catenax-ng"
-#      repository : "k8s-helm-example"
+#      repository : "<new-team-repository-template-if-needed>"
 #    }
 #    codeowners_available : false
 #    codeowners : null
 #  }
 #}
 #
+# Structure of Github Repostitory / Github Team mapping resolve <variable> with namingpattern
 #github_repositories_teams = {
-#  # repoName-gh-teamName
+#  # pattern "<new-repository-name>-<new-team-name>"
 #  "playground-target-argocdadmins" : {
-#    team_name : "argocdadmins"
-#    repository : "playground-target"
-#    permission : "admin"
+#    team_name : "<new-team-name>"
+#    repository : "<new-repository-name>"
+#    permission : "maintain" # default should "maintain" execpt some special permission is needed
 #  }
 #}
 

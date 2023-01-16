@@ -1,3 +1,17 @@
+# New Product Object for Vault for authenticate new product gh teams to the ArgoCD deployed Vault 
+# on UI and a technical user for new product
+# 
+# product_teams = {
+# "<new-vault-object-for-new-product-team>" : {
+#   name : "<new-vault-product-name>"
+#   secret_engine_name : "<new-vault-secret-engine-for-new-product>"
+#   ui_policy_name : "<new-vault-product-ui-permissions-for-vault-default-rw>"
+#   approle_name : "<new-vault-app-role-name>"
+#   approle_policy_name : "<new-vault-product-technical-permissions-for-vault-default-ro>"
+#   github_team : "<new-product-team-gh-team-name>"
+#   avp_secret_name : "<new-argocd-vault-plugin-sercret-for-new-product-team>"
+# },
+
 product_teams = {
   "example" : {
     name : "product-team-example"
