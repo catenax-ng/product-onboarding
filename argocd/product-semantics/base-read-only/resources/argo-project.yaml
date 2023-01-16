@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-semantics
+  namespace: argocd
+spec:
+  description: Project for team semantics
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-semantics
+      server: https://kubernetes.default.svc
+    - namespace: product-semantics-pen
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-semantics:project-read-only, applications, get, project-semantics/*, allow
+        - p, proj:project-semantics:team-admin, exec, create, project-semantics/*, allow
+      groups:
+        - catenax-ng:product-semantics
+        - catenax-ng:release-management
+        - catenax-ng:test-management

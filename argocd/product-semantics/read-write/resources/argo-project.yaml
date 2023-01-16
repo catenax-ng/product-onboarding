@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-semantics
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-semantics
+      server: https://kubernetes.default.svc
+    - namespace: product-semantics-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-semantics.
+      policies:
+        - p, proj:product-semantics:team-admin, applications, *, product-semantics/*, allow
+        - p, proj:product-semantics:team-admin, exec, create, product-semantics/*, allow
+      groups:
+        - catenax-ng:product-semantics
