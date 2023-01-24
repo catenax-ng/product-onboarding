@@ -1,10 +1,10 @@
-This folder contains Terraform scripting for Vault onboarding.
+# This folder contains Terraform scripting for Vault onboarding
 
 **TLDR** one terraform run for all vault permissions for each product
 
 In our case we have one Vault Cluster which is capable for all Vault information for each cluster and product.
 
-### Add the new team to the list of product teams
+## Add the new team to the list of product teams
 
 Onboarding a new team is also managed by our terraform variables [vault/terraform.tfvars](vault/terraform.tfvars).
 You need to edit `terraform.tfvars` in the `vault` directory and locate the variable `product_teams`
@@ -24,4 +24,3 @@ Vault resources set up:
 
 All of these resources are created through terraform scripts. The scripts are part of the
 [product-onboarding](https://github.com/catenax-ng/product-onboarding) repository.
-

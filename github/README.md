@@ -1,15 +1,14 @@
-This folder contains Terraform scripting for GitHub onboarding.
+# This folder contains Terraform scripting for GitHub onboarding
 
 **TLDR** one terraform run for all gh-repositorys gh-teams and gh-mapping between repositorys and teams
 
 In our case we have one Github Organisation which is capable for all github repository information within the catena-x ng for each product.
 
-
 ## Assigning a team as contributor to a repository via terraform
 
 Contribution access to a repository in our GitHub organization is granted on a team level. We do not
 grant this kind of access to individuals.
-Access is again managed by our terraform variables under [github folder ](..github/).
+Access is again managed by our terraform variables under [github folder](..github/).
 
 To manage contribution access for a team on a repository, edit the `terraform.tfvars` file in the `github` directory.
 
@@ -36,10 +35,8 @@ As initial information to onboard a user to the organization, we need:
 - The GitHub username (or email address) of the person to onboard
 - A person (i.e. the product PO) to vouch for the person being onboarded to actually be part of Catena-X
 
-
 > Assigning a GitHub user to the several GitHub product teams should be done by the maintainers of the GitHub product teams. Only in rare cases,
 > like onboarding a new person and a new team in the same step, DevSecOps team should assign github users to github teams.
-
 
 ### Creating a GitHub team via terraform
 
@@ -56,7 +53,7 @@ key you use for your new entry is unique. This key will also be used by terrafor
 
 ### Creating a repository via terraform
 
-Git repositories are also managed by our terraform `terraform.tfvars`. 
+Git repositories are also managed by our terraform `terraform.tfvars`.
 The process of creating a new repository is similar to creating a team. You need to edit the `main.tf` file in the `github` directory. Repositories are defined in the `github_repositories` section inside of `github/terraform.tfvars`. This variable is a map containing all the repository information. To create a new one, add a new entry to the map.
 
 Event though most of the repository settings are configurable, the following should be set in a default case.
@@ -69,18 +66,17 @@ Event though most of the repository settings are configurable, the following sho
 - `template : null`. Since we usually do not use a template, we do not specify one. In case we want to use a template,
   this variable has to be defined as object of form `{ owner : "github-org" repository : "repo-name" }`
 
-
 > If the team requested k8s-helm-example repository to be used as a template, the following settings needs to be changed:
-> 
+>
 > - `uses_template : true`
 > - `template : { owner : "catenax-ng" repository : "k8s-helm-example" }`
-> 
+>
 > The newly created repository will be populated with files from the template, github pages will be enabled and github action for releasing helm charts to pages will be added.
 
 ### Enable access to a private repository via deploy key
 
 > The project/product has to follow the steps which can be found
-> here: [How to prepare a private repo](guides/how-to-prepare-a-private-repo).
+> here: [How to prepare a private repo](https://github.com/catenax-ng/catenax-ng.github.io/blob/main/docs/guides/how-to-prepare-a-private-repo.md).
 
 - Go to `catenax-ng\product-onboarding\argocd\argo-repos`
 - Add a file named `product-<productName>-repo.yaml`, e.g. for _product-semantics_ (`product-semantics-repo.yaml`):
