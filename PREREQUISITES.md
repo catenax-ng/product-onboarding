@@ -9,9 +9,9 @@ Links to our Subsrciption ()
 
 - [Azure CLI Installing Guidelines](https://learn.microsoft.com/en-us/cli/azure)
 
-You had to be invited to our Azure Subscription on [Azure-Portal](https://portal.azure.com/#@catenax.onmicrosoft.com)
+You have to be invited to our Azure Subscription on [Azure-Portal](https://portal.azure.com/#@catenax.onmicrosoft.com)
 
-Login to Azure on CLI for help, just ask an System Team Internal Member who has allready done that.
+Login to Azure on CLI for help, just ask a System Team Internal Member who has already done that.
 
 ``` bash
 az login --tenant <Catena-X-TenantID>
@@ -38,9 +38,8 @@ terraform init
 
 - enable your CLI
 
-Depending on which terraform run you will about to plan and perform you need to export the desired `TOKEN` from the terraform run to generate the ressources within it.
 
-For `terraform apply` and `terraform plan` command the following command line variables has to be set:
+For `terraform apply` and `terraform plan` command the following command line variables has to be exported from our `Vault` and set:
 
 ```shell
 # You can get a login token, by logging into the Vault web UI and using 'copy token' from the top right user menu.

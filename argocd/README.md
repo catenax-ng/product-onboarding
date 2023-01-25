@@ -1,9 +1,9 @@
 ## ArgoCD
 
-To provide a product-team access to the and cluster e.g. devsecops-testing infrastructure following onboarding steps must be performed (all
+To provide a product-team access to a cluster (e.g. devsecops-testing) the following onboarding steps must be performed (all
 steps are related to repository [product-onboarding](https://github.com/catenax-ng/product-onboarding/blob/main/README.md)):
 
-with this we provide a 
+With this we provide a 
 
 - new ArgoCD project for new product-team
 - create a new AVP secret for new product-team
@@ -14,7 +14,7 @@ product-team to ArgoCD.
 
 ### Create ArgoCD Project
 
-Create terraform manifests for the new product-team into a separate folder in this `argocd` folder and this will create per default a:
+Create terraform manifests for the new product-team into a separate folder inside the `argocd` folder and this will create per default a:
 
 - ArgoCD project
 - AVP-Secret
@@ -78,11 +78,11 @@ stringData:
 ```
 The secret will be called _vault-secret_ and stored in k8s namespace related to product-team.
 
-Store the manifests in [product-onboarding](https://github.com/catenax-ng/product-onboarding)repo in path `argocd` and an entry based on their permissions in every `cluster/<ClusterEnvironment>/kustomization.yaml`  where tha new product-team need a new argocd-project. Default is dev and int (named here Hotel-Budapest).
+Store the manifests in [product-onboarding](https://github.com/catenax-ng/product-onboarding) repo in path `argocd` and an entry based on their permissions in every `cluster/<ClusterEnvironment>/kustomization.yaml`  where the new product-team need a new argocd-project. Default is dev and int (named here Hotel-Budapest).
 
 ### Prepare Deployment Of ArgoCD Project And AVP Secret
 
-To deploy k8s namespace, ArgoCD Project and the AVP secret to on cluster envionment e.g devsecops-testing  you'll have to add a new entry into `cluster/devsecops-testing/kustomization.yaml`
+To deploy k8s namespace, ArgoCD Project and the AVP secret to the cluster (e.g devsecops-testing) you'll have to add a new entry to the `cluster/devsecops-testing/kustomization.yaml` file.
 in [product-onboarding](https://github.com/catenax-ng/product-onboarding/cluster) repo:
 
 More information you can found under `cluster/README.md`

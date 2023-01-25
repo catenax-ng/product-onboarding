@@ -4,7 +4,7 @@ This repository contains all necessary parts to onboard a Catena-X product to co
 
 ## Kubernetes / Argocd related Parts
 
-In `cluster` folder are all available clusters, in the `cluster/<clustername>/kustomization.yaml` we describe which product is deployed on the each cluster with the decleared permission level for the product on the target cluster.
+The `cluster` folder contains all available clusters, in the `cluster/<clustername>/kustomization.yaml` we describe on which cluster the products with the declared permissions are deployed.
 
 For each product based on their permissions on the clusters we declare the following Kubernetes cluster ressources.
 
@@ -24,21 +24,21 @@ More Information can be found under argocd Folder: [README.md](argocd/README.md)
 
 We are providing all github repositorys and github organisation teams via an `terraform.tfvars`.
 
-Discription  of the to be added github teams / github repositorys / github repository-teams-mapping can be found in `github/terraform.tfvars` and if we want to create a new Repo/Team/Mapping we need to add all of the following.
+Description  of the to be added GitHub teams / GitHub repositories / GitHub repository-teams-mapping can be found in `github/terraform.tfvars` and if we want to create a new Repo/Team/Mapping we need to add all of the following.
 
 - 'New' Github Repository
-- 'New' Github Teams
+- 'New' Github Team
 - 'New' Mapping between Github Repository and Github Team
 
-More Information can be found under Github Folder: [README.md](github/README.md)
+More information can be found under the github folder: [README.md](github/README.md)
 
 ## Vault related parts
 
-We are providing for all product-teams vaults with their related Key/Value pairs based on the gh-product-team-name.
+We are providing all product-teams `Vault` access with their Secrets Engine where they can store their own  Key/Value pairs based on the `gh-product-team-name`.
 
-Discription  of the to be added product vault can be found in `vault/terraform.tfvars`.
+Description of the product to be added to vault can be found in `vault/terraform.tfvars`.
 
-More Information can be found under Vault folder: [README](vault/README.md)
+More information can be found under vault folder: [README](vault/README.md)
 
 ### Product Onboard Repository Folder Structure
 
@@ -108,5 +108,4 @@ After you have created / modified the files for the new product-team e.g.product
 create a PR for your branch. After the PR has been approved and merged into main branch, the new team will be
 automatically deployed to cluster environment (via ArgoCD application over the `_<ENVIRONMENT>-config_` at ArgoCD within the `_CORE_` cluster).
 
-Only after the merge in Github and the terraform apply have been done, the terraform state is consistent.
-Otherwise changes which are applied in parallel by someone else might be deleted again.
+Only after the merge in GitHub and the `terraform apply` have been done, the terraform state is consistent, otherwise changes which are applied in parallel by someone else might be deleted again.
