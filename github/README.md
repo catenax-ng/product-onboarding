@@ -1,8 +1,9 @@
 # This folder contains Terraform scripting for GitHub onboarding
 
-**TLDR** one terraform run for all gh-repositorys gh-teams and gh-mapping between repositorys and teams
+**TLDR** one terraform run for all gh-repositories, gh-teams and gh-mapping between repositories and teams
 
-In our case we have one Github Organisation which is capable for all github repository information within the catena-x ng for each product.
+In our case we have one GitHub Organization which contains all GitHub repository information within
+ catena-x ng for each product.
 
 ## Assigning a team as contributor to a repository via terraform
 
@@ -13,7 +14,7 @@ Access is again managed by our terraform variables under [github folder](..githu
 To manage contribution access for a team on a repository, edit the `terraform.tfvars` file in the `github` directory.
 
 There, add a new map entry to the `github_repositories_teams` variable inside `terraform.tfvars`.
-As convention, we decided to for the map key as a combination of repository and team (`<repository-name-team-name>`).
+As convention, we decided for the map key to be a combination of repository and team (`<repository-name-team-name>`).
 This is done, because we have cases of multiple teams contributing to a single repository. This is configured, by
 adding multiple entries to the `github_repositories_teams` map, containing the same repository, but a different team
 each time.
@@ -21,9 +22,9 @@ each time.
 As default, we configure `maintain` access on the product repositories for the teams, since all the administrative
 tasks are handled by the team managing the organization.
 
-## GitHub Organistation
+## GitHub Organization
 
-The following section describes how to handle users, teams and repositories in our GitHub organisation
+The following section describes how to handle users, teams and repositories in our GitHub organization
 
 ### Invitation of a single user
 

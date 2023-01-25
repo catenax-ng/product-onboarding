@@ -1,5 +1,4 @@
-# New Product Object for Vault for authenticate new product gh teams to the ArgoCD deployed Vault 
-# on UI and a technical user for new product
+# New product object for product teams to authenticate in Vault. Also contains the name of the machine user, the name of the secret engine and the Kubernetes secret with which the ArgoCD Vault Plugin can authenticate to resolve secret variables.
 # 
 # product_teams = {
 # "<new-vault-object-for-new-product-team>" : {

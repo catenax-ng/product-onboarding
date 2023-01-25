@@ -1,4 +1,4 @@
-# Explanation for the Structure of the Variables with provide for terraform scripts
+# Explanation for the structure and variables we provide for terraform scripts
 #
 # Structure of Github Teams resolve <variable> with namingpattern
 # github_teams = {

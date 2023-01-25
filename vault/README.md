@@ -2,7 +2,7 @@
 
 **TLDR** one terraform run for all vault permissions for each product
 
-In our case we have one Vault Cluster which is capable for all Vault information for each cluster and product.
+In our case we have one Vault Cluster which contains all secrets for each cluster and product.
 
 ## Add the new team to the list of product teams
 

@@ -12,7 +12,7 @@ clusterlinks:
 
 ## Include all products on this cluster and its permission level
 
-In `cluster` folder are all available clusters, in the `cluster/<clustername>/kustomization.yaml` we describe which product is deployed on the each cluster with the decleared permission level for the product on the target cluster.
+The `cluster` folder contains all available clusters, in the `cluster/<clustername>/kustomization.yaml` we describe on which cluster the products with the declared permissions are deployed.
 
 Example:
 `- ../../argocd/product-example/read-write`  
