@@ -838,8 +838,8 @@ github_repositories = {
     homepage_url : ""
     topics : ["internal"]
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -1432,8 +1432,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : ""
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -1691,8 +1691,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : ""
+      enabled : true
+      branch : "main"
     }
     is_template : false
     uses_template : false
@@ -1736,6 +1736,23 @@ github_repositories = {
   },
   "product-portal-swagger" : {
     name : "product-portal-swagger"
+    team_name : ""
+    description : "Catena-X Portal Swagger"
+    visibility : "public"
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : ""
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+  },
+  "product-bpdm-env" : {
+    name : "product-bpdm-env"
     team_name : ""
     description : ""
     visibility : "public"
@@ -1788,6 +1805,11 @@ github_repositories_teams = {
   "product-bpdm-cdq-bridge-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "product-bpdm-cdq-bridge"
+    permission : "maintain"
+  },
+  "product-bpdm-env-product-bpdm" : {
+    team_name : "product-bpdm"
+    repository : "product-bpdm-env"
     permission : "maintain"
   },
   "product-semantics-product-semantics" : {
