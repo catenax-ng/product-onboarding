@@ -82,8 +82,17 @@ Store the manifests in [product-onboarding](https://github.com/catenax-ng/produc
 
 ### Prepare Deployment Of ArgoCD Project And AVP Secret
 
-To deploy k8s namespace, ArgoCD Project and the AVP secret to the cluster (e.g devsecops-testing) you'll have to add a new entry to the `cluster/devsecops-testing/kustomization.yaml` file.
-in [product-onboarding](https://github.com/catenax-ng/product-onboarding/cluster) repo:
+- create new product-team-folder under [argocd](../argocd)
+- modify k8s resources and names after new-product-team requirements
 
-More information you can found under `cluster/README.md`
+After you have created / modified the files for the new product-team e.g.product-example
 
+- `argocd/product-example/base-read-only/resources/argo-project.yaml`
+- `argocd/product-example/base-read-only/resources/avp-secret.yaml`
+- `argocd/product-example/base-read-only/resources/avp-secret.yaml`
+- `cluster/devsecops-testing/kustomization.yaml`
+
+To deploy k8s namespace, ArgoCD Project and the AVP secret to the cluster (e.g. devsecops-testing) you'll have to add a new entry to the `cluster/devsecops-testing/kustomization.yaml` file.
+and follow the instructions on the repository [README](../README.md) 
+
+More information you can find under [cluster/README.md](../cluster/README.md)

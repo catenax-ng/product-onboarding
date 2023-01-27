@@ -9,11 +9,11 @@ In our case we have one GitHub Organization which contains all GitHub repository
 
 Contribution access to a repository in our GitHub organization is granted on a team level. We do not
 grant this kind of access to individuals.
-Access is again managed by our terraform variables under [github folder](..github/).
+Access is again managed by our terraform variables under [github folder](../github).
 
-To manage contribution access for a team on a repository, edit the `terraform.tfvars` file in the `github` directory.
+To manage contribution access for a team on a repository, edit [terraform.tfvars](terraform.tfvars) file in the [github folder](../github) directory.
 
-There, add a new map entry to the `github_repositories_teams` variable inside `terraform.tfvars`.
+There, add a new map entry to the `github_repositories_teams` variable inside [terraform.tfvars](terraform.tfvars).
 As convention, we decided for the map key to be a combination of repository and team (`<repository-name-team-name>`).
 This is done, because we have cases of multiple teams contributing to a single repository. This is configured, by
 adding multiple entries to the `github_repositories_teams` map, containing the same repository, but a different team
@@ -24,7 +24,7 @@ tasks are handled by the team managing the organization.
 
 ## GitHub Organization
 
-The following section describes how to handle users, teams and repositories in our GitHub organization
+The following section describes how to handle users, teams and repositories in our GitHub organization.
 
 ### Invitation of a single user
 
@@ -39,23 +39,36 @@ As initial information to onboard a user to the organization, we need:
 > Assigning a GitHub user to the several GitHub product teams should be done by the maintainers of the GitHub product teams. Only in rare cases,
 > like onboarding a new person and a new team in the same step, DevSecOps team should assign github users to github teams.
 
-### Creating a GitHub team via terraform
+### Creating a GitHub teams via terraform
 
-Access to repositories is granted on a GitHub team level instead of individuals. Also RBAC definitions on Vault and
+Access to repositories is granted on a GitHub team level instead of individuals. Also, a RBAC (Role Based Access Control) definitions on Vault and
 ArgoCD are based on GitHub team membership.
 
-To create GitHub teams, we are using the terraform variable `terraform.tfvars` within the folder `github` .
-To create a new GitHub team, edit `terraform.tfvars` and locate the variable `github_teams`  section
+To create GitHub teams, we are using the Terraform variable [terraform.tfvars](terraform.tfvars) within the folder [github](../github) .
+To create a new GitHub team, edit [terraform.tfvars](terraform.tfvars) and locate the variable `github_teams` section
 inside. This variable contains a map of all the teams in our GitHub organization with name and
 description properties.
 
 All you need to do is to add a new entry to that map with the new team name and an optional description. Make sure, the
 key you use for your new entry is unique. This key will also be used by terraform to create an entry in the state file.
 
+### Terraform variable settings for GitHub scripts
+
+For `terraform plan` and `terraform apply` command the following command line variables have to be either exported in your CLI or Terraform will ask for:
+
+```shell
+# your PAT = personal access token for Github has to be created.
+export TF_VAR_github_token=<github-pat>
+```
+
 ### Creating a repository via terraform
 
-Git repositories are also managed by our terraform `terraform.tfvars`.
-The process of creating a new repository is similar to creating a team. You need to edit the `main.tf` file in the `github` directory. Repositories are defined in the `github_repositories` section inside of `github/terraform.tfvars`. This variable is a map containing all the repository information. To create a new one, add a new entry to the map.
+Git repositories are also managed by our [terraform.tfvars](terraform.tfvars).
+The process of creating a new repository is similar to creating a team. You need to edit [terraform.tfvars](terraform.tfvars) file in the [github](../github) directory. Repositories are defined in the `github_repositories` section inside [terraform.tfvars](terraform.tfvars). This variable is a map containing all the repository information. To create a new one, add a new entry to the map.
+
+- switch to [github](../github) folder in your cli 
+- add gh-repo / gh-teams / gh-repo-teams-mapping entries in [github/terraform.tfvars](terraform.tfvars) 
+- do a `terraform plan` to check if the changes meet your expectations
 
 Event though most of the repository settings are configurable, the following should be set in a default case.
 
@@ -74,39 +87,40 @@ Event though most of the repository settings are configurable, the following sho
 >
 > The newly created repository will be populated with files from the template, github pages will be enabled and github action for releasing helm charts to pages will be added.
 
+## Special GitHub Tasks
+
 ### Enable access to a private repository via deploy key
 
 > The project/product has to follow the steps which can be found
 > here: [How to prepare a private repo](https://github.com/catenax-ng/catenax-ng.github.io/blob/main/docs/guides/how-to-prepare-a-private-repo.md).
 
-- Go to `catenax-ng\product-onboarding\argocd\argo-repos`
-- Add a file named `product-<productName>-repo.yaml`, e.g. for _product-semantics_ (`product-semantics-repo.yaml`):
+- Go to `argocd\product-folder\base-read-only`
+- Add a file named `product-<productName>-private-repo.yaml`
 
-  ```yaml
-  apiVersion: v1
-  kind: Secret
-  metadata:
-    name: product-semantics-repo
-    namespace: argocd
-    annotations:
-      avp.kubernetes.io/path: "semantics/data/deploy-key"
-    labels:
-      argocd.argoproj.io/secret-type: repository
-  stringData:
-    type: git
-    url: git@github.com:catenax-ng/product-semantics
-    name: product-semantics-repo
-    project: project-semantics
-    sshPrivateKey: |
-      <semantics-deploy-key>
-  ```
+>  e.g. for _product-semantics_ add new file in `argocd/product-semantics/base-read-only/product-semantics-private-repo.yaml`
+ 
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: product-semantics-repo
+  namespace: argocd
+  annotations:
+    avp.kubernetes.io/path: "semantics/data/deploy-key"
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  type: git
+  url: git@github.com:catenax-ng/product-semantics
+  name: product-semantics-repo
+  project: project-semantics
+  sshPrivateKey: |
+    <semantics-deploy-key>
+```
 
-- Add following line to `environments/hotel-budapest/kustomization.yaml` and for every environment you need it.
-Default is dev and int (Hotel-Budapest).
-
-  ```yaml
-  - argo-repos/product-semantics-repo.yaml
-  ```
+This added file will generate a new ressource within the product specific environment based on in which cluster `kustomization.yaml` the product is enabled.
+Current Default is `dev` and `int` (a.k.a Hotel-Budapest).
+  
 
 ### Enable access to a private package (central pull secret)
 
@@ -116,7 +130,7 @@ Default is dev and int (Hotel-Budapest).
 - Now do a base64 encoding for the PAT $ echo -n "<username\>:<PAT\>" | base64
 - Create a file `.dockerconfigjson` containing the base-64 encoded PAT
 
-  ```json
+```json
   {
     "auths": {
       "ghcr.io": {
@@ -124,13 +138,13 @@ Default is dev and int (Hotel-Budapest).
       }
     }
   }
-  ```
+```
 
 - Do a base 64 encoding for the auth part
 
-  ```shell
+```shell
   echo -n'{"auths":{"ghcr.io":{"auth":"<base-64 encoded PAT>"}}}' | base64
-  ```
+```
 
   If the output is divided into 2 lines, just add the second line to the first (without space)
 
