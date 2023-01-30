@@ -2,7 +2,9 @@
 
 This repository contains all necessary parts to onboard a Catena-X product to consortia environments.
 
-## Kubernetes / Argo Cd related parts
+## Repository structure
+
+### Kubernetes / Argo Cd related parts
 
 The [cluster](cluster) folder contains all available clusters, in the `cluster/<CLUSTERNAME>/kustomization.yaml` we describe on which cluster the products with the declared permissions are deployed.
 
@@ -10,7 +12,7 @@ For each product based on their permissions on the clusters we declare the follo
 
 More Information can be found under `argocd` Folder: [README.md](argocd/README.md)
 
-## GitHub related parts
+### GitHub related parts
 
 We are providing all GitHub repositorys and GitHub organisation teams via a Terraform Script [terraform.tfvars](github/terraform.tfvars).
 
@@ -23,7 +25,7 @@ if we want to create a new Repo/Team/Mapping we need to add all the following:
 
 More information can be found under the `github` folder: [README.md](github/README.md)
 
-## Vault related parts
+### Vault related parts
 
 We are providing all product-teams Vault access with their Secrets Engine where they can store their own  Key/Value pairs based on the `gh-product-team-name`.
 
@@ -31,7 +33,7 @@ The new product Vault that has to be added can be found in `vault/terraform.tfva
 
 More information and ressource description can be found under `vault` folder: [README](vault/README.md)
 
-## Product onboard  folder structure relation
+### Product onboard  folder structure relation
 
 - New product resources are listed in the [Argo Cd](argocd) folder, and here we declare read-only resources and read-write resources. 
 - Our clusters are listed under [cluster](cluster) folder, and in each [kustomization.yml](cluster/devsecops-testing/kustomization.yaml) we define the products that are deployed on the specific cluster. 
