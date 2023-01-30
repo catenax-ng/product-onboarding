@@ -2,17 +2,11 @@
 
 This repository contains all necessary parts to onboard a Catena-X product to consortia environments.
 
-## Kubernetes / Argo Cd related Parts
+## Kubernetes / Argo Cd related parts
 
 The [cluster](cluster) folder contains all available clusters, in the `cluster/<CLUSTERNAME>/kustomization.yaml` we describe on which cluster the products with the declared permissions are deployed.
 
 For each product based on their permissions on the clusters we declare the following default Kubernetes cluster resources.
-
-> Example:
-> `../../argocd/product-example/read-write`
-> has read-write permission on the cluster devsecops-testing
-> and it is declared on the cluster
-> `cluster/devsecops-testing/kustomization.yaml`
 
 More Information can be found under `argocd` Folder: [README.md](argocd/README.md)
 
@@ -37,9 +31,25 @@ The new product Vault that has to be added can be found in `vault/terraform.tfva
 
 More information and ressource description can be found under `vault` folder: [README](vault/README.md)
 
-## Product Onboard Repository Folder Structure Relation
+## Product onboard  folder structure relation
 
-## Tooling for Terraform scripts for new Products
+- New product resources are listed in the [Argo Cd](argocd) folder, and here we declare read-only resources and read-write resources. 
+- Our clusters are listed under [cluster](cluster) folder, and in each [kustomization.yml](cluster/devsecops-testing/kustomization.yaml) we define the products that are deployed on the specific cluster. 
+- But based on the reference in we declare on the cluster `kustomization.yml` the resources will be provided on the cluster.
+- GiHub folder is for new product-team GitHub team / repository / and the mapping between
+- Vault folder is for new vault resources for the new product
+
+> Example:
+> - product-example within [argocd](argocd/product-example) 
+> - cluster membership `../../argocd/product-example/read-write` in devsecops-testing [kustomization.yml](cluster/devsecops-testing/kustomization.yaml) 
+> - product has read-write permission on the devsecops-testing cluster 
+>   - but will also get the read-only "base" resources in the read-only folder [kustomization.yml](argocd/product-example/base-read-only/kustomization.yaml)
+>   - because of referencing the read-only parts in read-write folder of the product-example
+>   - see `bases: ../base-read-only` in read-write [kustomization.yml](argocd/product-example/read-write/kustomization.yaml)
+> - related GitHub information you can find in Terraform variables in [github folder](github/terraform.tfvars)
+> - related Vault information you can find in Terraform variables in [vault folder](vault/terraform.tfvars)
+
+## Tooling for Terraform scripts for new products
 
 Our current environments are running in Azure Cloud based on Azure Kubernetes Service and were managed or deployed with Terraform scripts. The following Tools are required to run these scripts.
 
