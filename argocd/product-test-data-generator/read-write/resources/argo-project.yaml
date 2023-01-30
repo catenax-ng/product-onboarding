@@ -17,3 +17,10 @@ spec:
         - p, proj:product-test-data-generator:team-admin, exec, create, product-test-data-generator/*, allow
       groups:
         - catenax-ng:product-test-data-generator
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-test-data-generator:read-only, applications, get, project-test-data-generator/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

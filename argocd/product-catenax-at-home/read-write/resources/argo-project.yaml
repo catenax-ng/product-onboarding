@@ -17,3 +17,10 @@ spec:
         - p, proj:product-catenax-at-home:team-admin, exec, create, product-catenax-at-home/*, allow
       groups:
         - catenax-ng:product-catenax-at-home
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-catenax-at-home:read-only, applications, get, project-catenax-at-home/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

@@ -17,3 +17,10 @@ spec:
         - p, proj:product-value-added-service:team-admin, exec, create, product-value-added-service/*, allow
       groups:
         - catenax-ng:product-value-added-service
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-value-added-service:read-only, applications, get, project-value-added-service/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

@@ -17,3 +17,10 @@ spec:
         - p, proj:product-et-demonstrators:team-admin, exec, create, product-et-demonstrators/*, allow
       groups:
         - catenax-ng:product-et-demonstrators
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-et-demonstrators:read-only, applications, get, project-et-demonstrators/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

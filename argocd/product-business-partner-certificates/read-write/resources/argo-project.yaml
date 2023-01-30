@@ -17,3 +17,10 @@ spec:
         - p, proj:product-business-partner-certificates:team-admin, exec, create, product-business-partner-certificates/*, allow
       groups:
         - catenax-ng:product-business-partner-certificates
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-business-partner-certificates:read-only, applications, get, project-business-partner-certificates/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
