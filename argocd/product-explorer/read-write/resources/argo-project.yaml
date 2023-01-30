@@ -17,3 +17,10 @@ spec:
         - p, proj:product-explorer:team-admin, exec, create, product-explorer/*, allow
       groups:
         - catenax-ng:product-explorer
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-explorer:read-only, applications, get, project-explorer/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

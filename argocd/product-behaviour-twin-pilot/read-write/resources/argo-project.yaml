@@ -17,3 +17,10 @@ spec:
         - p, proj:product-behaviour-twin-pilot:team-admin, exec, create, product-behaviour-twin-pilot/*, allow
       groups:
         - catenax-ng:product-behaviour-twin-pilot
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-behaviour-twin-pilot:read-only, applications, get, project-behaviour-twin-pilot/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

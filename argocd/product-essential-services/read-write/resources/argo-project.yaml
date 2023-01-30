@@ -17,3 +17,10 @@ spec:
         - p, proj:product-essential-services:team-admin, exec, create, product-essential-services/*, allow
       groups:
         - catenax-ng:product-essential-services
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-essential-services:read-only, applications, get, project-essential-services/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

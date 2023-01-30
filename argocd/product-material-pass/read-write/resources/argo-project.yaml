@@ -17,3 +17,10 @@ spec:
         - p, proj:product-material-pass:team-admin, exec, create, product-material-pass/*, allow
       groups:
         - catenax-ng:product-material-pass
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-material-pass:read-only, applications, get, project-material-pass/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

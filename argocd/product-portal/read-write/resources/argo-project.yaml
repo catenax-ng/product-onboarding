@@ -21,3 +21,10 @@ spec:
         - p, proj:product-portal:team-admin, exec, create, product-portal/*, allow
       groups:
         - catenax-ng:product-portal
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-portal:read-only, applications, get, project-portal/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

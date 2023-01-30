@@ -17,3 +17,10 @@ spec:
         - p, proj:product-managed-identity-wallets:team-admin, exec, create, product-managed-identity-wallets/*, allow
       groups:
         - catenax-ng:product-managed-identity-wallets
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-managed-identity-wallets:read-only, applications, get, project-managed-identity-wallets/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

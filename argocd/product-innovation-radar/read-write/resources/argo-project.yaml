@@ -17,3 +17,10 @@ spec:
         - p, proj:product-innovation-radar:team-admin, exec, create, product-innovation-radar/*, allow
       groups:
         - catenax-ng:product-innovation-radar
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-innovation-radar:read-only, applications, get, project-innovation-radar/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

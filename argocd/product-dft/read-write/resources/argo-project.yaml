@@ -17,3 +17,10 @@ spec:
         - p, proj:product-dft:team-admin, exec, create, product-dft/*, allow
       groups:
         - catenax-ng:product-dft
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-dft:read-only, applications, get, project-dft/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
