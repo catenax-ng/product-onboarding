@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: product-catenax-at-home
+  name: catenax-at-home
