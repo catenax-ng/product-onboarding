@@ -5,6 +5,7 @@ bases:
   - ../base-read-only
 
 resources:
+  - resources/avp-secret.yaml
   - resources/namespace.yaml
 
 patchesStrategicMerge:
