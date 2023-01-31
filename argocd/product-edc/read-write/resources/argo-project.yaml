@@ -9,14 +9,6 @@ spec:
       server: https://kubernetes.default.svc
     - namespace: product-edc-pen
       server: https://kubernetes.default.svc
-    - namespace: dev-product-edc
-      server: https://kubernetes.default.svc
-    - namespace: int-product-edc
-      server: https://kubernetes.default.svc
-    - namespace: catenax-at-home
-      server: https://kubernetes.default.svc
-    - namespace: catenax-at-home-pen
-      server: https://kubernetes.default.svc
   roles:
     - name: team-admin
       description: All access to applications inside project-edc.
