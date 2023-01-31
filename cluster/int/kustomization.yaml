@@ -33,3 +33,6 @@ resources:
 
   - storage-class/standard-ssd-lrs-retain.yaml
   - pull-secret/secret.yaml
+
+patchesStrategicMerge:
+  - project-traceability-irs.yaml
