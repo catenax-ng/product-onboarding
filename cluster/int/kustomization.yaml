@@ -35,4 +35,4 @@ resources:
   - pull-secret/secret.yaml
 
 patchesStrategicMerge:
-  - project-traceability-irs.yaml
+  - argocd-resource-patches/project-traceability-irs.yaml
