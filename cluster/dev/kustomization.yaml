@@ -31,3 +31,6 @@ resources:
   - ../../argocd/product-traceability-foss/read-write
   - ../../argocd/product-traceability-irs/read-write
   - ../../argocd/product-value-added-service/read-write
+
+patchesStrategicMerge:
+  - argocd-resource-patches/project-traceability-irs.yaml
