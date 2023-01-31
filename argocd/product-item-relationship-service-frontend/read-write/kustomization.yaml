@@ -10,5 +10,5 @@ resources:
 
 patchesStrategicMerge:
   - resources/argo-project.yaml
-  - argocd-notifications-cm.yaml
-  - argocd-notifications-secret.yaml
+  - resources/argocd-notifications-cm.yaml
+  - resources/argocd-notifications-secret.yaml
