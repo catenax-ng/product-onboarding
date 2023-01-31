@@ -17,3 +17,10 @@ spec:
         - p, proj:product-product-data-format-transformer:team-admin, exec, create, product-product-data-format-transformer/*, allow
       groups:
         - catenax-ng:product-product-data-format-transformer
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-product-data-format-transformer:read-only, applications, get, project-product-data-format-transformer/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

@@ -17,3 +17,10 @@ spec:
         - p, proj:product-r-strategy-assistant:team-admin, exec, create, product-r-strategy-assistant/*, allow
       groups:
         - catenax-ng:product-r-strategy-assistant
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-r-strategy-assistant:read-only, applications, get, project-r-strategy-assistant/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

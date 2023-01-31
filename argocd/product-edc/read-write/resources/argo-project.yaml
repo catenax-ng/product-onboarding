@@ -25,3 +25,10 @@ spec:
         - p, proj:product-edc:team-admin, exec, create, product-edc/*, allow
       groups:
         - catenax-ng:product-edc
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-edc:read-only, applications, get, project-edc/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

@@ -17,3 +17,10 @@ spec:
         - p, proj:product-data-integrity-demonstrator:team-admin, exec, create, product-data-integrity-demonstrator/*, allow
       groups:
         - catenax-ng:product-data-integrity-demonstrator
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-data-integrity-demonstrator:read-only, applications, get, project-data-integrity-demonstrator/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

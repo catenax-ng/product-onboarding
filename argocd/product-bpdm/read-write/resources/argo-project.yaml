@@ -17,3 +17,10 @@ spec:
         - p, proj:product-bpdm:team-admin, exec, create, product-bpdm/*, allow
       groups:
         - catenax-ng:product-bpdm
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-bpdm:read-only, applications, get, project-bpdm/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
