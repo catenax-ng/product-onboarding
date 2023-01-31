@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-esc-backbone:project-read-only, applications, get, project-esc-backbone/*, allow
-        - p, proj:project-esc-backbone:team-admin, exec, create, project-esc-backbone/*, allow
+        - p, proj:project-esc-backbone:project-read-only, exec, create, project-esc-backbone/*, allow
       groups:
         - catenax-ng:product-esc-backbone
         - catenax-ng:release-management

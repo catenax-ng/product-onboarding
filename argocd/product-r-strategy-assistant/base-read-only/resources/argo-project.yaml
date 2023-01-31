@@ -25,7 +25,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-r-strategy-assistant:project-read-only, applications, get, project-r-strategy-assistant/*, allow
-        - p, proj:project-r-strategy-assistant:team-admin, exec, create, project-r-strategy-assistant/*, allow
+        - p, proj:project-r-strategy-assistant:project-read-only, exec, create, project-r-strategy-assistant/*, allow
       groups:
         - catenax-ng:product-r-strategy-assistant
         - catenax-ng:release-management

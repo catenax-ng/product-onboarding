@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-business-partner-certificates:project-read-only, applications, get, project-business-partner-certificates/*, allow
-        - p, proj:project-business-partner-certificates:team-admin, exec, create, project-business-partner-certificates/*, allow
+        - p, proj:project-business-partner-certificates:project-read-only, exec, create, project-business-partner-certificates/*, allow
       groups:
         - catenax-ng:product-business-partner-certificates
         - catenax-ng:release-management

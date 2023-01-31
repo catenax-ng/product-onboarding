@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-catenax-at-home:project-read-only, applications, get, project-catenax-at-home/*, allow
-        - p, proj:project-catenax-at-home:team-admin, exec, create, project-catenax-at-home/*, allow
+        - p, proj:project-catenax-at-home:project-read-only, exec, create, project-catenax-at-home/*, allow
       groups:
         - catenax-ng:product-catenax-at-home
         - catenax-ng:release-management

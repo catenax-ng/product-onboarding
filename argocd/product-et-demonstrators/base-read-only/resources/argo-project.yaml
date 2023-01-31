@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-et-demonstrators:project-read-only, applications, get, project-et-demonstrators/*, allow
-        - p, proj:project-et-demonstrators:team-admin, exec, create, project-et-demonstrators/*, allow
+        - p, proj:project-et-demonstrators:project-read-only, exec, create, project-et-demonstrators/*, allow
       groups:
         - catenax-ng:product-et-demonstrators
         - catenax-ng:release-management

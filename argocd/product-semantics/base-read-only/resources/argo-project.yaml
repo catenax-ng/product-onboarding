@@ -25,7 +25,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-semantics:project-read-only, applications, get, project-semantics/*, allow
-        - p, proj:project-semantics:team-admin, exec, create, project-semantics/*, allow
+        - p, proj:project-semantics:project-read-only, exec, create, project-semantics/*, allow
       groups:
         - catenax-ng:product-semantics
         - catenax-ng:release-management

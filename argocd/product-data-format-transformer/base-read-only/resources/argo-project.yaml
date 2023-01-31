@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-data-format-transformer:project-read-only, applications, get, project-data-format-transformer/*, allow
-        - p, proj:project-data-format-transformer:team-admin, exec, create, project-data-format-transformer/*, allow
+        - p, proj:project-data-format-transformer:project-read-only, exec, create, project-data-format-transformer/*, allow
       groups:
         - catenax-ng:product-data-format-transformer
         - catenax-ng:release-management

@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-data-integrity-demonstrator:project-read-only, applications, get, project-data-integrity-demonstrator/*, allow
-        - p, proj:project-data-integrity-demonstrator:team-admin, exec, create, project-data-integrity-demonstrator/*, allow
+        - p, proj:project-data-integrity-demonstrator:project-read-only, exec, create, project-data-integrity-demonstrator/*, allow
       groups:
         - catenax-ng:product-data-integrity-demonstrator
         - catenax-ng:release-management

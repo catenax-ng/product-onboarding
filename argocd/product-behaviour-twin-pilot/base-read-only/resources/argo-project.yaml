@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-behaviour-twin-pilot:project-read-only, applications, get, project-behaviour-twin-pilot/*, allow
-        - p, proj:project-behaviour-twin-pilot:team-admin, exec, create, project-behaviour-twin-pilot/*, allow
+        - p, proj:project-behaviour-twin-pilot:project-read-only, exec, create, project-behaviour-twin-pilot/*, allow
       groups:
         - catenax-ng:product-behaviour-twin-pilot
         - catenax-ng:release-management

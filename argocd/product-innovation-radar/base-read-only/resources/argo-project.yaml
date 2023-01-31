@@ -23,7 +23,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-innovation-radar:project-read-only, applications, get, project-innovation-radar/*, allow
-        - p, proj:project-innovation-radar:team-admin, exec, create, project-innovation-radar/*, allow
+        - p, proj:project-innovation-radar:project-read-only, exec, create, project-innovation-radar/*, allow
       groups:
         - catenax-ng:product-innovation-radar
         - catenax-ng:release-management

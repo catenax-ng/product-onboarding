@@ -25,7 +25,7 @@ spec:
       description: provide read-only access to project
       policies:
         - p, proj:project-traceability-irs:project-read-only, applications, get, project-traceability-irs/*, allow
-        - p, proj:project-traceability-irs:team-admin, exec, create, project-traceability-irs/*, allow
+        - p, proj:project-traceability-irs:project-read-only, exec, create, project-traceability-irs/*, allow
       groups:
         - catenax-ng:product-traceability-irs
         - catenax-ng:release-management
