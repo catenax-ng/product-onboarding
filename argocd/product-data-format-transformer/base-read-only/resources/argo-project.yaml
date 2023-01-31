@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: project-product-data-format-transformer
+  name: project-data-format-transformer
   namespace: argocd
 spec:
   description: Project for team DataFormatTransformer
   sourceRepos:
     - '*'
   destinations:
-    - namespace: product-product-data-format-transformer
+    - namespace: product-data-format-transformer
       server: https://kubernetes.default.svc
   # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
   namespaceResourceBlacklist:
@@ -22,9 +22,9 @@ spec:
     - name: project-read-only
       description: provide read-only access to project
       policies:
-        - p, proj:project-product-data-format-transformer:project-read-only, applications, get, project-product-data-format-transformer/*, allow
-        - p, proj:project-product-data-format-transformer:team-admin, exec, create, project-product-data-format-transformer/*, allow
+        - p, proj:project-data-format-transformer:project-read-only, applications, get, project-data-format-transformer/*, allow
+        - p, proj:project-data-format-transformer:team-admin, exec, create, project-data-format-transformer/*, allow
       groups:
-        - catenax-ng:product-product-data-format-transformer
+        - catenax-ng:product-data-format-transformer
         - catenax-ng:release-management
         - catenax-ng:test-management
