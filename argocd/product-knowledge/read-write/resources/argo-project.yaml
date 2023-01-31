@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-knowledge.
       policies:
-        - p, proj:product-knowledge:team-admin, applications, *, product-knowledge/*, allow
-        - p, proj:product-knowledge:team-admin, exec, create, product-knowledge/*, allow
+        - p, proj:project-knowledge:team-admin, applications, *, project-knowledge/*, allow
+        - p, proj:project-knowledge:team-admin, exec, create, project-knowledge/*, allow
       groups:
         - catenax-ng:product-knowledge
     - name: read-only

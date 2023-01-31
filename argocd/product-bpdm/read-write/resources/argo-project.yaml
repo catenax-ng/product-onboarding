@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-bpdm.
       policies:
-        - p, proj:product-bpdm:team-admin, applications, *, product-bpdm/*, allow
-        - p, proj:product-bpdm:team-admin, exec, create, product-bpdm/*, allow
+        - p, proj:project-bpdm:team-admin, applications, *, project-bpdm/*, allow
+        - p, proj:project-bpdm:team-admin, exec, create, project-bpdm/*, allow
       groups:
         - catenax-ng:product-bpdm
     - name: read-only

@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-catenax-at-home.
       policies:
-        - p, proj:product-catenax-at-home:team-admin, applications, *, product-catenax-at-home/*, allow
-        - p, proj:product-catenax-at-home:team-admin, exec, create, product-catenax-at-home/*, allow
+        - p, proj:project-catenax-at-home:team-admin, applications, *, project-catenax-at-home/*, allow
+        - p, proj:project-catenax-at-home:team-admin, exec, create, project-catenax-at-home/*, allow
       groups:
         - catenax-ng:product-catenax-at-home
     - name: read-only

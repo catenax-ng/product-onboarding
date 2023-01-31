@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-esc-backbone.
       policies:
-        - p, proj:product-esc-backbone:team-admin, applications, *, product-esc-backbone/*, allow
-        - p, proj:product-esc-backbone:team-admin, exec, create, product-esc-backbone/*, allow
+        - p, proj:project-esc-backbone:team-admin, applications, *, project-esc-backbone/*, allow
+        - p, proj:project-esc-backbone:team-admin, exec, create, project-esc-backbone/*, allow
       groups:
         - catenax-ng:product-esc-backbone
     - name: read-only

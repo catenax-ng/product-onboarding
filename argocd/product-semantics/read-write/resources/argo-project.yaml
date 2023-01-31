@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-semantics.
       policies:
-        - p, proj:product-semantics:team-admin, applications, *, product-semantics/*, allow
-        - p, proj:product-semantics:team-admin, exec, create, product-semantics/*, allow
+        - p, proj:project-semantics:team-admin, applications, *, project-semantics/*, allow
+        - p, proj:project-semantics:team-admin, exec, create, project-semantics/*, allow
       groups:
         - catenax-ng:product-semantics
     - name: read-only

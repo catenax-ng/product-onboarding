@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-essential-services.
       policies:
-        - p, proj:product-essential-services:team-admin, applications, *, product-essential-services/*, allow
-        - p, proj:product-essential-services:team-admin, exec, create, product-essential-services/*, allow
+        - p, proj:project-essential-services:team-admin, applications, *, project-essential-services/*, allow
+        - p, proj:project-essential-services:team-admin, exec, create, project-essential-services/*, allow
       groups:
         - catenax-ng:product-essential-services
     - name: read-only

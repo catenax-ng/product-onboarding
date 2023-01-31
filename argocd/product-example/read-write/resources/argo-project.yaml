@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-example. Read only on project itself
       policies:
-        - p, proj:product-team-example:team-admin, applications, *, product-team-example/*, allow
-        - p, proj:product-team-example:team-admin, exec, create, product-team-example/*, allow
+        - p, proj:project-example:team-admin, applications, *, project-example/*, allow
+        - p, proj:project-example:team-admin, exec, create, project-example/*, allow
       groups:
         - catenax-ng:product-team-example
     - name: read-only

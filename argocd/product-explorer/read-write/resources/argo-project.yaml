@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-explorer.
       policies:
-        - p, proj:product-explorer:team-admin, applications, *, product-explorer/*, allow
-        - p, proj:product-explorer:team-admin, exec, create, product-explorer/*, allow
+        - p, proj:project-explorer:team-admin, applications, *, project-explorer/*, allow
+        - p, proj:project-explorer:team-admin, exec, create, project-explorer/*, allow
       groups:
         - catenax-ng:product-explorer
     - name: read-only

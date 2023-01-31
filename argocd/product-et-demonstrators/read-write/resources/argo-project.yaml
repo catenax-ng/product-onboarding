@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-et-demonstrators.
       policies:
-        - p, proj:product-et-demonstrators:team-admin, applications, *, product-et-demonstrators/*, allow
-        - p, proj:product-et-demonstrators:team-admin, exec, create, product-et-demonstrators/*, allow
+        - p, proj:project-et-demonstrators:team-admin, applications, *, project-et-demonstrators/*, allow
+        - p, proj:project-et-demonstrators:team-admin, exec, create, project-et-demonstrators/*, allow
       groups:
         - catenax-ng:product-et-demonstrators
     - name: read-only

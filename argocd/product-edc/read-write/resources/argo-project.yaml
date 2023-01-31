@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-edc.
       policies:
-        - p, proj:product-edc:team-admin, applications, *, product-edc/*, allow
-        - p, proj:product-edc:team-admin, exec, create, product-edc/*, allow
+        - p, proj:project-edc:team-admin, applications, *, project-edc/*, allow
+        - p, proj:project-edc:team-admin, exec, create, product-edc/*, allow
       groups:
         - catenax-ng:product-edc
     - name: read-only

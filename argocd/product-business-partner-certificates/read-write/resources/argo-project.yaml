@@ -13,8 +13,8 @@ spec:
     - name: team-admin
       description: All access to applications inside project-business-partner-certificates.
       policies:
-        - p, proj:product-business-partner-certificates:team-admin, applications, *, product-business-partner-certificates/*, allow
-        - p, proj:product-business-partner-certificates:team-admin, exec, create, product-business-partner-certificates/*, allow
+        - p, proj:project-business-partner-certificates:team-admin, applications, *, project-business-partner-certificates/*, allow
+        - p, proj:project-business-partner-certificates:team-admin, exec, create, project-business-partner-certificates/*, allow
       groups:
         - catenax-ng:product-business-partner-certificates
     - name: read-only
