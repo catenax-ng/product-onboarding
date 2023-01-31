@@ -4,11 +4,11 @@ This repository contains all necessary parts to onboard a Catena-X product to co
 
 ## Repository structure
 
-### Kubernetes / Argo Cd related parts
+### Argo Cd related parts / Kubernetes cluster
 
-The [cluster](cluster) folder contains all available clusters, in the `cluster/<CLUSTERNAME>/kustomization.yaml` we describe on which cluster the products with the declared permissions are deployed.
+The [argocd](argocd) folder contains all available product resource files.
 
-For each product based on their permissions on the clusters we declare the following default Kubernetes cluster resources.
+The [cluster](cluster) folder contains all available clusters, in the `cluster/<CLUSTERNAME>/kustomization.yaml` we describe each product that is deployed in the cluster based on their permission level.
 
 More Information can be found under `argocd` Folder: [README.md](argocd/README.md)
 
@@ -77,7 +77,7 @@ az account set --subscription <SubscriptionID>
 
 ## Onboarding a new product
 
-### Product onboarding files  
+### Product onboarding files
 
 Following new product specific files have to be added:
 

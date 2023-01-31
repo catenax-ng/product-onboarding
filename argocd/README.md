@@ -12,7 +12,7 @@ With this we provide a
 First create a new branch based on branching naming convention in [product-onboarding](https://github.com/catenax-ng/product-onboarding) repo for onboarding a new
 product-team to ArgoCD.
 
-### Create ArgoCD Project
+### Create Argo Cd project
 
 Create terraform manifests for the new product-team into a separate folder inside the `argocd` folder and this will create per default a:
 
@@ -80,7 +80,7 @@ The secret will be called _vault-secret_ and stored in k8s namespace related to 
 
 Store the manifests in [product-onboarding](https://github.com/catenax-ng/product-onboarding) repo in path `argocd` and an entry based on their permissions in every `cluster/<ClusterEnvironment>/kustomization.yaml`  where the new product-team need a new argocd-project. Default is dev and int (named here Hotel-Budapest).
 
-### Prepare Deployment Of ArgoCD Project And AVP Secret
+### Prepare deployment of Argo Cd project and AVP secret
 
 - create new product-team-folder under [argocd](../argocd)
 - modify k8s resources and names after new-product-team requirements
@@ -96,3 +96,7 @@ To deploy k8s namespace, ArgoCD Project and the AVP secret to the cluster (e.g. 
 and follow the instructions on the repository [README](../README.md) 
 
 More information you can find under [cluster/README.md](../cluster/README.md)
+
+## Special Argo Cd tasks
+
+For special cases you will find dedicated instructions within this folder named `enable-<things-we-do>.md`.

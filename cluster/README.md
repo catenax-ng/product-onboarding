@@ -2,7 +2,7 @@
 
 Within the folders we describe each customisation for the cluster and the products that are deployed on it.
 
-clusterlinks:
+cluster links:
 
 - [beta](../cluster/beta)
 - [dev](../cluster/dev)
@@ -19,7 +19,7 @@ In the `kustomization.yaml` for each cluster we describe all the products with t
 Please add the new product-teams in alphabetical order of file `kustomization.yaml` based on their permission level.
 
 Example:
-`- ../../argocd/product-example/read-write`  
+`- ../../argocd/product-example/read-write`
 `- ../../argocd/product-example/read-only`
 
 ```yaml
@@ -31,4 +31,3 @@ resources:
   - ../../argocd/product-example/read-only
 #  - ../../argocd/product-example/read-write  would it be for only read-write permissions
 ```
-
