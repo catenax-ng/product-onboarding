@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: project-dft
+  name: product-dft
   namespace: argocd
 spec:
   description: Project for team traceability dft
@@ -22,8 +22,8 @@ spec:
     - name: project-read-only
       description: provide read-only access to project
       policies:
-        - p, proj:project-dft:project-read-only, applications, get, project-dft/*, allow
-        - p, proj:project-dft:team-admin, exec, create, project-dft/*, allow
+        - p, proj:product-dft:project-read-only, applications, get, product-dft/*, allow
+        - p, proj:product-dft:project-read-only, exec, create, product-dft/*, allow
       groups:
         - catenax-ng:product-dft
         - catenax-ng:release-management

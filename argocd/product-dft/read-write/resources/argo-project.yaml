@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: project-dft
+  name: product-dft
   namespace: argocd
 spec:
   destinations:
@@ -11,7 +11,7 @@ spec:
       server: https://kubernetes.default.svc
   roles:
     - name: team-admin
-      description: All access to applications inside project-dft.
+      description: All access to applications inside product-dft.
       policies:
         - p, proj:product-dft:team-admin, applications, *, product-dft/*, allow
         - p, proj:product-dft:team-admin, exec, create, product-dft/*, allow
@@ -20,7 +20,7 @@ spec:
     - name: read-only
       description: Read only access to the project
       policies:
-        - p, proj:project-dft:read-only, applications, get, project-dft/*, allow
+        - p, proj:product-dft:read-only, applications, get, product-dft/*, allow
       groups:
         - catenax-ng:release-management
         - catenax-ng:test-management
