@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  # Namespaces to create
+  - resources/namespaces.yaml
+
+  # AVP secrets to create in namespaces
+#  - resources/avp-secrets/avp-secret-app-dashboard.yaml # currently AVP unused here
+  - resources/avp-secrets/avp-secret-argocd.yaml
+  - resources/avp-secrets/avp-secret-cert-manager.yaml
+#  - resources/avp-secrets/avp-secret-default.yaml # currently no ApplicationSet used AVP here
+  - resources/avp-secrets/avp-secret-monitoring.yaml
+  - resources/avp-secrets/avp-secret-kyverno.yaml
+  - resources/avp-secrets/avp-secret-logging.yaml
+  - resources/avp-secrets/avp-secret-maintenance-dashboard-app.yaml
+  - resources/avp-secrets/avp-secret-reflector.yaml
+  - resources/avp-secrets/avp-secret-tls.yaml
