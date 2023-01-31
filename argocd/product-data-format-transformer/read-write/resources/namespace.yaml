@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: product-product-data-format-transformer-pen
+  name: product-data-format-transformer-pen
