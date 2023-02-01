@@ -10,7 +10,7 @@ cluster links:
 - [int](../cluster/int)
 - [pre-prod](../cluster/pre-prod)
 
-## Description of Products per Cluster
+## Description of products per cluster
 
 The [cluster](../cluster) folder contains all available clusters.
 
@@ -30,4 +30,13 @@ resources:
 # Mapping of all products on this cluster and its permission level here in example for read-only permissions
   - ../../argocd/product-example/read-only
 #  - ../../argocd/product-example/read-write  would it be for only read-write permissions
+```
+## Special variables for products in cluster folder
+
+If there are special ressource variables for a product on the cluster we overwrite this within this folder `cluster/<environment>/argocd-resource-patches`
+
+e.g Jwt token for product traceability-irs in [int environment](cluster/int/argocd-resource-patches/)
+``` yaml
+patchesStrategicMerge:
+    - argocd-resource-patches/project-traceability-irs.yaml
 ```
