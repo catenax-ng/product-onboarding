@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   # ArgoCDAdmins
-  - ../../argocd/argocdadmins/read-write
+  # - ../../argocd/argocdadmins/read-write
 
   # Product Onboarding
   - ../../argocd/product-example/read-write
