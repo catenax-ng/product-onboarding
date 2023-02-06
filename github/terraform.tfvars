@@ -680,7 +680,7 @@ github_repositories = {
   "product-traceability-foss-backend" : {
     name : "product-traceability-foss-backend"
     team_name : "product-traceability-foss"
-    description : "Repo for the Backend of the Traceability FOSS Application in Catena-X"
+    description : "DEPRECATED - use https://github.com/catenax-ng/tx-traceability-foss-backend"
     visibility : "public"
     homepage_url : ""
     topics : []
