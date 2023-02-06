@@ -1952,7 +1952,7 @@ github_repositories_teams = {
   "product-item-relationship-service-product-traceability-irs" : {
     team_name : "product-traceability-irs"
     repository : "product-item-relationship-service"
-    permission : "maintain"
+    permission : "pull"
   },
   "tx-item-relationship-service-product-traceability-irs" : {
     team_name : "product-traceability-irs"
