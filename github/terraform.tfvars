@@ -663,13 +663,13 @@ github_repositories = {
   "product-traceability-foss-frontend" : {
     name : "product-traceability-foss-frontend"
     team_name : "product-traceability-foss"
-    description : "Repo for the Frontend of the Traceability FOSS Application in Catena-X"
+    description : "DEPRECATED - use https://github.com/catenax-ng/tx-traceability-foss-frontend"
     visibility : "public"
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
