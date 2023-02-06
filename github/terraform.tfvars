@@ -994,8 +994,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
