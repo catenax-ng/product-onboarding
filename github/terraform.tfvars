@@ -1784,7 +1784,41 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-  }
+  },
+  "tx-vas-country-risk-frontend" : {
+      name : "tx-vas-country-risk-frontend"
+      team_name : "product-value-added-service"
+      description : ""
+      visibility : "public"
+      homepage_url : ""
+      topics : []
+      pages : {
+        enabled : false
+        branch : ""
+      }
+      is_template : false
+      uses_template : false
+      template : null
+      codeowners_available : false
+      codeowners : null
+    },
+  "tx-vas-country-risk-backend" : {
+      name : "tx-vas-country-risk-backend"
+      team_name : "product-value-added-service"
+      description : ""
+      visibility : "public"
+      homepage_url : ""
+      topics : []
+      pages : {
+        enabled : false
+        branch : ""
+      }
+      is_template : false
+      uses_template : false
+      template : null
+      codeowners_available : false
+      codeowners : null
+    }
 }
 
 github_repositories_teams = {
@@ -2277,6 +2311,16 @@ github_repositories_teams = {
   "product-portal-swagger-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-swagger"
+    permission : "maintain"
+  },
+  "tx-vas-country-risk-frontend-product-value-added-service" : {
+    team_name : "product-value-added-service"
+    repository : "tx-vas-country-risk-frontend"
+    permission : "maintain"
+  },
+  "tx-vas-country-risk-backend-product-value-added-service" : {
+    team_name : "product-value-added-service"
+    repository : "tx-vas-country-risk-backend"
     permission : "maintain"
   }
 }
