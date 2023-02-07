@@ -29,5 +29,8 @@ resources:
   - ../../argocd/product-traceability-irs/read-write
   - ../../argocd/product-value-added-service/read-write
 
+  - storage-class/standard-ssd-lrs-retain.yaml
+  - pull-secret/secret.yaml
+
 patchesStrategicMerge:
   - argocd-resource-patches/project-traceability-irs.yaml

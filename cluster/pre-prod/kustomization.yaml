@@ -26,3 +26,6 @@ resources:
   - ../../argocd/product-traceability-foss/base-read-only
   - ../../argocd/product-traceability-irs/base-read-only
   - ../../argocd/product-value-added-service/base-read-only
+
+  - storage-class/standard-ssd-lrs-retain.yaml
+  - pull-secret/secret.yaml
