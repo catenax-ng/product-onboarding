@@ -663,13 +663,13 @@ github_repositories = {
   "product-traceability-foss-frontend" : {
     name : "product-traceability-foss-frontend"
     team_name : "product-traceability-foss"
-    description : "Repo for the Frontend of the Traceability FOSS Application in Catena-X"
+    description : "DEPRECATED - use https://github.com/catenax-ng/tx-traceability-foss-frontend"
     visibility : "public"
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -680,7 +680,7 @@ github_repositories = {
   "product-traceability-foss-backend" : {
     name : "product-traceability-foss-backend"
     team_name : "product-traceability-foss"
-    description : "Repo for the Backend of the Traceability FOSS Application in Catena-X"
+    description : "DEPRECATED - use https://github.com/catenax-ng/tx-traceability-foss-backend"
     visibility : "public"
     homepage_url : ""
     topics : []
@@ -994,8 +994,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -1952,7 +1952,7 @@ github_repositories_teams = {
   "product-item-relationship-service-product-traceability-irs" : {
     team_name : "product-traceability-irs"
     repository : "product-item-relationship-service"
-    permission : "maintain"
+    permission : "pull"
   },
   "tx-item-relationship-service-product-traceability-irs" : {
     team_name : "product-traceability-irs"
