@@ -2016,7 +2016,7 @@ github_repositories_teams = {
   "product-traceability-foss-backend-product-traceability-foss" : {
     team_name : "product-traceability-foss"
     repository : "product-traceability-foss-backend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-esc-backbone-code-product-esc-backbone" : {
     team_name : "product-esc-backbone"
