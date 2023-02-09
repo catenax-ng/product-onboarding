@@ -663,7 +663,7 @@ github_repositories = {
   "product-traceability-foss-frontend" : {
     name : "product-traceability-foss-frontend"
     team_name : "product-traceability-foss"
-    description : "DEPRECATED - use https://github.com/catenax-ng/tx-traceability-foss-frontend"
+    description : "DEPRECATED - use https://github.com/eclipse-tractusx/traceability-foss-frontend"
     visibility : "public"
     homepage_url : ""
     topics : []
@@ -680,7 +680,7 @@ github_repositories = {
   "product-traceability-foss-backend" : {
     name : "product-traceability-foss-backend"
     team_name : "product-traceability-foss"
-    description : "DEPRECATED - use https://github.com/catenax-ng/tx-traceability-foss-backend"
+    description : "DEPRECATED - use https://github.com/eclipse-tractusx/traceability-foss-backend"
     visibility : "public"
     homepage_url : ""
     topics : []
