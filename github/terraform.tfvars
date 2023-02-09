@@ -2011,7 +2011,7 @@ github_repositories_teams = {
   "product-traceability-foss-frontend-product-traceability-foss" : {
     team_name : "product-traceability-foss"
     repository : "product-traceability-foss-frontend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-traceability-foss-backend-product-traceability-foss" : {
     team_name : "product-traceability-foss"
