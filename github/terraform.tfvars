@@ -585,7 +585,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "product-testdata-2-edc" : {
     name : "product-testdata-2-edc"
@@ -660,7 +660,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "product-traceability-foss-backend" : {
     name : "product-traceability-foss-backend"
@@ -678,7 +678,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "product-esc-backbone-code" : {
     name : "product-esc-backbone-code"
