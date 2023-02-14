@@ -24,6 +24,7 @@ variable "github_repositories" {
       pattern = string
       review_count = number
     })
+    archived = bool
   }))
 }
 
