@@ -1,42 +1,3 @@
-#github_teams = {
-#    "argocdadmins" : {
-#      "name" : "argocdadmins",
-#      "description" : "ArgoCD OAuth administrator team"
-#    },
-#}
-#
-#github_repositories = {
-#  "playground-target" : {
-#    name : "playground-target"
-#    team_name : ""
-#    description : ""
-#    visibility : "public"
-#    homepage_url : ""
-#    topics : []
-#    pages : {
-#      enabled : false
-#      branch : ""
-#    }
-#    is_template : false
-#    uses_template : false
-#    template : {
-#      owner : "catenax-ng"
-#      repository : "k8s-helm-example"
-#    }
-#    codeowners_available : false
-#    codeowners : null
-#  }
-#}
-#
-#github_repositories_teams = {
-#  # repoName-gh-teamName
-#  "playground-target-argocdadmins" : {
-#    team_name : "argocdadmins"
-#    repository : "playground-target"
-#    permission : "admin"
-#  }
-#}
-
 github_teams = {
   "argocdadmins" : {
     "name" : "argocdadmins",
@@ -140,7 +101,7 @@ github_teams = {
   },
   "product-knowledge" : {
     "name" : "product-knowledge"
-    "description" : "Catena-X Knowledge Agents delivers a semantically-driven and state-of-the-art compute-to-data architecture for automotive use cases based on the best GAIA-X, W3C and Big Data practices."
+    "description" : "Catena-X Knowledge Agents delivers a semantically-driven and state-of-the-art compute-to-data architecture for automotive use cases based on the best GAIA-X, W3C and Big Data practices. Team Discussions: catenax-ng/product-knowledge"
   }
   "release-management" : {
     name : "release-management"
@@ -192,7 +153,7 @@ github_repositories = {
     }
     codeowners_available : false
     codeowners : null
-
+    archived : false
   },
   "product-puris-frontend" : {
     name : "product-puris-frontend"
@@ -213,15 +174,15 @@ github_repositories = {
     }
     codeowners_available : false
     codeowners : null
-
+    archived : false
   },
   "product-bpdm" : {
     name : "product-bpdm"
     team_name : "product-bpdm"
-    description : ""
+    description : "DEPRECATED"
     visibility : "public"
     homepage_url : ""
-    topics : []
+    topics : ["archived", "deprecated", "obsolete"]
     pages : {
       enabled : true
       branch : "gh-pages"
@@ -231,7 +192,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-
+    archived : false
   },
   "product-idses-frontend-apps" : {
     name : "product-idses-frontend-apps"
@@ -249,7 +210,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-
+    archived : false
   },
   "product-innovation-radar" : {
     name : "product-innovation-radar"
@@ -267,6 +228,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-semantics" : {
     name : "product-semantics"
@@ -284,6 +246,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-frontend" : {
     name : "product-portal-frontend"
@@ -301,6 +264,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-iam" : {
     name : "product-portal-iam"
@@ -322,6 +286,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-backend" : {
     name : "product-portal-backend"
@@ -343,6 +308,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-data-integrity-demonstrator" : {
     name : "product-data-integrity-demonstrator"
@@ -360,6 +326,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "catenax-at-home" : {
     name : "catenax-at-home",
@@ -377,6 +344,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-core-schemas" : {
     name : "product-core-schemas",
@@ -394,6 +362,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-cd" : {
     name : "product-portal-cd"
@@ -418,6 +387,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "DataSpaceConnector" : {
     name : "DataSpaceConnector"
@@ -435,6 +405,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-common-assets" : {
     name : "product-portal-common-assets"
@@ -452,11 +423,12 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-core-managed-identity-wallets" : {
     "name" : "product-core-managed-identity-wallets"
     "team_name" : "product-managed-identity-wallets"
-    "description" : ""
+    "description" : "DEPRECATED"
     visibility : "public"
     homepage_url : ""
     topics : []
@@ -469,6 +441,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-dft-backend" : {
     name : "product-dft-backend"
@@ -486,6 +459,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-dft-backend" : {
     name : "tx-dft-backend"
@@ -503,6 +477,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-dft-frontend" : {
     name : "product-dft-frontend"
@@ -520,6 +495,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-dft-frontend" : {
     name : "tx-dft-frontend"
@@ -537,6 +513,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-sd-hub" : {
     name : "product-sd-hub"
@@ -554,6 +531,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-omejdn-server" : {
     name : "product-omejdn-server"
@@ -571,6 +549,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-DAPS" : {
     name : "product-DAPS"
@@ -588,6 +567,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-item-relationship-service" : {
     name : "product-item-relationship-service"
@@ -605,6 +585,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : true
   },
   "product-testdata-2-edc" : {
     name : "product-testdata-2-edc"
@@ -622,6 +603,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-traceability-foss" : {
     name : "product-traceability-foss"
@@ -639,6 +621,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-esc-backbone" : {
     name : "product-esc-backbone"
@@ -659,6 +642,7 @@ github_repositories = {
       review_count : 1
       pattern : "main"
     }
+    archived : false
   },
   "product-traceability-foss-frontend" : {
     name : "product-traceability-foss-frontend"
@@ -676,6 +660,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : true
   },
   "product-traceability-foss-backend" : {
     name : "product-traceability-foss-backend"
@@ -693,6 +678,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : true
   },
   "product-esc-backbone-code" : {
     name : "product-esc-backbone-code"
@@ -710,6 +696,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-trace-cs-webapp" : {
     name : "product-trace-cs-webapp"
@@ -727,6 +714,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-explorer" : {
     name : "product-explorer"
@@ -744,6 +732,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-core-managed-identity-wallets-cd" : {
     name : "product-core-managed-identity-wallets-cd"
@@ -761,6 +750,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-behaviour-twin-pilot" : {
     name : "product-behaviour-twin-pilot"
@@ -778,6 +768,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-behaviour-twin-pilot-private" : {
     name : "product-behaviour-twin-pilot-private"
@@ -795,6 +786,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-value-added-service" : {
     name : "product-value-added-service"
@@ -812,6 +804,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "foss-example" : {
     name : "foss-example"
@@ -829,6 +822,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "k8s-cluster-stack" : {
     name : "k8s-cluster-stack"
@@ -846,6 +840,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-edc" : {
     name : "product-edc"
@@ -863,6 +858,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "k8s-helm-example" : {
     name : "k8s-helm-example"
@@ -880,6 +876,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "catenax-ng.github.io" : {
     name : "catenax-ng.github.io"
@@ -897,6 +894,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-test-data-generator" : {
     name : "product-test-data-generator"
@@ -914,6 +912,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-hello-helm" : {
     name : "product-portal-hello-helm"
@@ -931,6 +930,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-frontend-registration" : {
     name : "product-portal-frontend-registration"
@@ -951,6 +951,7 @@ github_repositories = {
     }
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-vas-country-risk-frontend" : {
     name : "product-vas-country-risk-frontend"
@@ -968,6 +969,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-knowledge" : {
     name : "product-knowledge"
@@ -985,13 +987,14 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-battery-passport-consumer-app" : {
     name : "product-battery-passport-consumer-app"
     team_name : "product-material-pass"
-    description : ""
+    description : "Catena-X Digital Product Passport Application (Frontend/Backend)"
     visibility : "public"
-    homepage_url : ""
+    homepage_url : "https://materialpass.int.demo.catena-x.net"
     topics : []
     pages : {
       enabled : true
@@ -1002,6 +1005,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "gh-org-checks" : {
     name : "gh-org-checks"
@@ -1022,6 +1026,7 @@ github_repositories = {
       review_count : 1
       pattern : "main"
     }
+    archived : false
   },
   "maintenance-dashboard" : {
     name : "maintenance-dashboard"
@@ -1042,6 +1047,7 @@ github_repositories = {
       review_count : 1
       pattern : "main"
     }
+    archived : false
   },
   "product-simple-configurator" : {
     name : "product-simple-configurator"
@@ -1059,6 +1065,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-vas-fraud-api" : {
     name : "product-vas-fraud-api"
@@ -1076,6 +1083,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-vas-fraud-workers" : {
     name : "product-vas-fraud-workers"
@@ -1093,6 +1101,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-vas-fraud-dashboard" : {
     name : "product-vas-fraud-dashboard"
@@ -1110,6 +1119,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-vas-fraud-dags" : {
     name : "product-vas-fraud-dags"
@@ -1127,6 +1137,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-vas-fraud-cd" : {
     name : "product-vas-fraud-cd"
@@ -1144,6 +1155,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "catena-x-release-deployment" : {
     name : "catena-x-release-deployment"
@@ -1164,6 +1176,7 @@ github_repositories = {
       review_count : 1
       pattern : "main"
     }
+    archived : false
   },
   "product-daps-registration-service" : {
     name : "product-daps-registration-service"
@@ -1181,6 +1194,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-registry-twin-check" : {
     name : "product-registry-twin-check"
@@ -1198,6 +1212,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-autosetup-backend" : {
     name : "product-autosetup-backend"
@@ -1215,6 +1230,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-business-partner-certificates" : {
     name : "product-business-partner-certificates"
@@ -1232,6 +1248,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-et-demonstrators" : {
     name : "product-et-demonstrators"
@@ -1249,6 +1266,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-item-relationship-service-frontend" : {
     name : "product-item-relationship-service-frontend"
@@ -1269,6 +1287,7 @@ github_repositories = {
     }
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-esc-backbone-blockexplorer" : {
     name : "product-esc-backbone-blockexplorer"
@@ -1286,6 +1305,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-oem-hi-app" : {
     name : "product-oem-hi-app"
@@ -1303,6 +1323,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-oem-rul-backend" : {
     name : "product-oem-rul-backend"
@@ -1320,6 +1341,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-behaviour-twin-libraries" : {
     name : "product-behaviour-twin-libraries"
@@ -1337,6 +1359,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-r-strategy-assistant" : {
     name : "product-r-strategy-assistant"
@@ -1354,6 +1377,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-sd-factory" : {
     name : "tx-sd-factory"
@@ -1371,6 +1395,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-item-relationship-service" : {
     name : "tx-item-relationship-service"
@@ -1389,6 +1414,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-daps-registration-service" : {
     name : "tx-daps-registration-service"
@@ -1406,6 +1432,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-daps-helm-chart" : {
     name : "tx-daps-helm-chart"
@@ -1423,6 +1450,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-autosetup-backend" : {
     name : "tx-autosetup-backend"
@@ -1440,6 +1468,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-portal-assets" : {
     name : "tx-portal-assets"
@@ -1457,6 +1486,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-portal-frontend-registration" : {
     name : "tx-portal-frontend-registration"
@@ -1474,6 +1504,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-portal-frontend" : {
     name : "tx-portal-frontend"
@@ -1495,6 +1526,7 @@ github_repositories = {
       pattern : "[dm][ea][vi]*"
       # terrible workaround as GH provider can only create one rule and GH only supports very limited RegEx features
     }
+    archived : false
   },
   "tx-portal-backend" : {
     name : "tx-portal-backend"
@@ -1512,6 +1544,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tractus-x-release" : {
     name : "tractus-x-release"
@@ -1529,6 +1562,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "eclipse-tractusx.github.io" : {
     name : "eclipse-tractusx.github.io"
@@ -1546,6 +1580,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-bpdm-pool" : {
     name : "product-bpdm-pool"
@@ -1563,6 +1598,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-bpdm-gate" : {
     name : "product-bpdm-gate"
@@ -1580,6 +1616,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-bpdm-common" : {
     name : "product-bpdm-common"
@@ -1597,6 +1634,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-bpdm-cdq-bridge" : {
     name : "product-bpdm-cdq-bridge"
@@ -1614,6 +1652,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-behaviour-twin-minio" : {
     name : "product-behaviour-twin-minio"
@@ -1631,6 +1670,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-bpdm" : {
     name : "tx-bpdm"
@@ -1648,6 +1688,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-onboarding" : {
     name : "product-onboarding"
@@ -1665,6 +1706,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "cloud-infra" : {
     name : "cloud-infra"
@@ -1682,6 +1724,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-managed-identity-wallets" : {
     name : "tx-managed-identity-wallets"
@@ -1699,6 +1742,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-traceability-foss-frontend" : {
     name : "tx-traceability-foss-frontend"
@@ -1716,6 +1760,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-traceability-foss-backend" : {
     name : "tx-traceability-foss-backend"
@@ -1733,6 +1778,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-portal-swagger" : {
     name : "product-portal-swagger"
@@ -1750,6 +1796,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "product-bpdm-env" : {
     name : "product-bpdm-env"
@@ -1767,6 +1814,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-data-exchange-test-service" : {
     name : "tx-data-exchange-test-service"
@@ -1784,41 +1832,44 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
+    archived : false
   },
   "tx-vas-country-risk-frontend" : {
-      name : "tx-vas-country-risk-frontend"
-      team_name : "product-value-added-service"
-      description : ""
-      visibility : "public"
-      homepage_url : ""
-      topics : []
-      pages : {
-        enabled : false
-        branch : ""
-      }
-      is_template : false
-      uses_template : false
-      template : null
-      codeowners_available : false
-      codeowners : null
-    },
-  "tx-vas-country-risk-backend" : {
-      name : "tx-vas-country-risk-backend"
-      team_name : "product-value-added-service"
-      description : ""
-      visibility : "public"
-      homepage_url : ""
-      topics : []
-      pages : {
-        enabled : false
-        branch : ""
-      }
-      is_template : false
-      uses_template : false
-      template : null
-      codeowners_available : false
-      codeowners : null
+    name : "tx-vas-country-risk-frontend"
+    team_name : "product-value-added-service"
+    description : ""
+    visibility : "public"
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : ""
     }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  },
+  "tx-vas-country-risk-backend" : {
+    name : "tx-vas-country-risk-backend"
+    team_name : "product-value-added-service"
+    description : ""
+    visibility : "public"
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : ""
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
 }
 
 github_repositories_teams = {
