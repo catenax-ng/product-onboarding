@@ -1091,7 +1091,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "product-vas-fraud-api" : {
     name : "product-vas-fraud-api"
