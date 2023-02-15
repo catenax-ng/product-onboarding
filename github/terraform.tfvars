@@ -605,24 +605,6 @@ github_repositories = {
     codeowners : null
     archived : false
   },
-  "product-traceability-foss" : {
-    name : "product-traceability-foss"
-    team_name : "product-traceability-foss"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : "main"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
   "product-esc-backbone" : {
     name : "product-esc-backbone"
     team_name : "product-esc-backbone"
@@ -1248,7 +1230,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "product-et-demonstrators" : {
     name : "product-et-demonstrators"
@@ -1377,7 +1359,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "tx-sd-factory" : {
     name : "tx-sd-factory"
@@ -2047,11 +2029,6 @@ github_repositories_teams = {
   "product-testdata-2-edc-product-data-integrity-demonstrator" : {
     team_name : "product-data-integrity-demonstrator"
     repository : "product-testdata-2-edc"
-    permission : "maintain"
-  },
-  "product-traceability-foss" : {
-    team_name : "product-traceability-foss"
-    repository : "product-traceability-foss"
     permission : "maintain"
   },
   "product-esc-backbone-product-esc-backbone" : {
