@@ -1,3 +1,47 @@
+# Explanation for the structure and variables we provide for terraform scripts
+#
+# Structure of Github Teams resolve <variable> with namingpattern
+# github_teams = {
+#    "<new-team-object>" : {
+#      "name" : "<new-team-name>",
+#      "description" : "<new-gh-team-description>"
+#    },
+#}
+#
+# Structure of Github Repostitorys resolve <variable> with namingpattern
+#github_repositories = {
+#  "<new-team-repository-object>" : {
+#    name : "<new-repository-name>"
+#    team_name : ""
+#    description : ""
+#    visibility : "public"
+#    homepage_url : ""
+#    topics : []
+#    pages : {
+#      enabled : false
+#      branch : ""
+#    }
+#    is_template : false
+#    uses_template : false
+#    template : {
+#      owner : "catenax-ng"
+#      repository : "<new-team-repository-template-if-needed>"
+#    }
+#    codeowners_available : false
+#    codeowners : null
+#  }
+#}
+#
+# Structure of Github Repostitory / Github Team mapping resolve <variable> with namingpattern
+#github_repositories_teams = {
+#  # pattern "<new-repository-name>-<new-team-name>"
+#  "playground-target-argocdadmins" : {
+#    team_name : "<new-team-name>"
+#    repository : "<new-repository-name>"
+#    permission : "maintain" # default should "maintain" execpt some special permission is needed
+#  }
+#}
+
 github_teams = {
   "argocdadmins" : {
     "name" : "argocdadmins",

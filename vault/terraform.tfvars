@@ -1,3 +1,16 @@
+# New product object for product teams to authenticate in Vault. Also contains the name of the machine user, the name of the secret engine and the Kubernetes secret with which the ArgoCD Vault Plugin can authenticate to resolve secret variables.
+# 
+# product_teams = {
+# "<new-vault-object-for-new-product-team>" : {
+#   name : "<new-vault-product-name>"
+#   secret_engine_name : "<new-vault-secret-engine-for-new-product>"
+#   ui_policy_name : "<new-vault-product-ui-permissions-for-vault-default-rw>"
+#   approle_name : "<new-vault-app-role-name>"
+#   approle_policy_name : "<new-vault-product-technical-permissions-for-vault-default-ro>"
+#   github_team : "<new-product-team-gh-team-name>"
+#   avp_secret_name : "<new-argocd-vault-plugin-sercret-for-new-product-team>"
+# },
+
 product_teams = {
   "example" : {
     name : "product-team-example"
