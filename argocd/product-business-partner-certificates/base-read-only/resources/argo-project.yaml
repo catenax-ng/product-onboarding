@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-business-partner-certificates
+  namespace: argocd
+spec:
+  description: Project for team Business Partner Certificates
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-business-partner-certificates
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-business-partner-certificates:project-read-only, applications, get, project-business-partner-certificates/*, allow
+        - p, proj:project-business-partner-certificates:project-read-only, exec, create, project-business-partner-certificates/*, allow
+      groups:
+        - catenax-ng:product-business-partner-certificates
+        - catenax-ng:release-management
+        - catenax-ng:test-management

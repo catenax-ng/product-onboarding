@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-knowledge
+  namespace: argocd
+spec:
+  description: Project for team knowledge
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-knowledge
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-knowledge:project-read-only, applications, get, project-knowledge/*, allow
+        - p, proj:project-knowledge:project-read-only, exec, create, project-knowledge/*, allow
+      groups:
+        - catenax-ng:product-knowledge
+        - catenax-ng:release-management
+        - catenax-ng:test-management

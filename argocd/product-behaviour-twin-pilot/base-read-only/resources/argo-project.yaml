@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-behaviour-twin-pilot
+  namespace: argocd
+spec:
+  description: Project for team BEHAVIOUR-TWIN-PILOT
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-behaviour-twin-pilot
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-behaviour-twin-pilot:project-read-only, applications, get, project-behaviour-twin-pilot/*, allow
+        - p, proj:project-behaviour-twin-pilot:project-read-only, exec, create, project-behaviour-twin-pilot/*, allow
+      groups:
+        - catenax-ng:product-behaviour-twin-pilot
+        - catenax-ng:release-management
+        - catenax-ng:test-management

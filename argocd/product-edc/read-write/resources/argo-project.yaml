@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-edc
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-edc
+      server: https://kubernetes.default.svc
+    - namespace: product-edc-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-edc.
+      policies:
+        - p, proj:project-edc:team-admin, applications, *, project-edc/*, allow
+        - p, proj:project-edc:team-admin, exec, create, product-edc/*, allow
+      groups:
+        - catenax-ng:product-edc
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-edc:read-only, applications, get, project-edc/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

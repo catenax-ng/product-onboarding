@@ -1,0 +1,31 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  # Product Onboarding
+  - ../../argocd/product-behaviour-twin-pilot/base-read-only
+  - ../../argocd/product-bpdm/base-read-only
+  - ../../argocd/product-business-partner-certificates/base-read-only
+  - ../../argocd/product-data-format-transformer/base-read-only
+  - ../../argocd/product-data-integrity-demonstrator/base-read-only
+  - ../../argocd/product-dft/base-read-only
+  - ../../argocd/product-edc/base-read-only
+  - ../../argocd/product-esc-backbone/base-read-only
+  - ../../argocd/product-essential-services/base-read-only
+  - ../../argocd/product-et-demonstrators/base-read-only
+  - ../../argocd/product-explorer/base-read-only
+  - ../../argocd/product-innovation-radar/base-read-only
+  - ../../argocd/product-item-relationship-service-frontend/base-read-only
+  - ../../argocd/product-knowledge/base-read-only
+  - ../../argocd/product-managed-identity-wallets/base-read-only
+  - ../../argocd/product-material-pass/base-read-only
+  - ../../argocd/product-portal/base-read-only
+  - ../../argocd/product-r-strategy-assistant/base-read-only
+  - ../../argocd/product-semantics/base-read-only
+  - ../../argocd/product-test-data-generator/base-read-only
+  - ../../argocd/product-traceability-foss/base-read-only
+  - ../../argocd/product-traceability-irs/base-read-only
+  - ../../argocd/product-value-added-service/base-read-only
+
+  - storage-class/standard-ssd-lrs-retain.yaml
+  - pull-secret/secret.yaml

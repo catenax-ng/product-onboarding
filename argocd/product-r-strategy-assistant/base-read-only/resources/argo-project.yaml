@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-r-strategy-assistant
+  namespace: argocd
+spec:
+  description: Project for team r-strategy-assistant
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-r-strategy-assistant
+      server: https://kubernetes.default.svc
+    - namespace: product-r-strategy-assistant-pen
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-r-strategy-assistant:project-read-only, applications, get, project-r-strategy-assistant/*, allow
+        - p, proj:project-r-strategy-assistant:project-read-only, exec, create, project-r-strategy-assistant/*, allow
+      groups:
+        - catenax-ng:product-r-strategy-assistant
+        - catenax-ng:release-management
+        - catenax-ng:test-management

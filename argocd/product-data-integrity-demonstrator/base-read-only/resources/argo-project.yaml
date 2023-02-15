@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-data-integrity-demonstrator
+  namespace: argocd
+spec:
+  description: Project for team DataIntegrityDemonstrator
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-data-integrity-demonstrator
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-data-integrity-demonstrator:project-read-only, applications, get, project-data-integrity-demonstrator/*, allow
+        - p, proj:project-data-integrity-demonstrator:project-read-only, exec, create, project-data-integrity-demonstrator/*, allow
+      groups:
+        - catenax-ng:product-data-integrity-demonstrator
+        - catenax-ng:release-management
+        - catenax-ng:test-management

@@ -28,6 +28,8 @@ resource "github_repository" "repositories" {
   squash_merge_commit_message = "COMMIT_MESSAGES"
   squash_merge_commit_title   = "COMMIT_OR_PR_TITLE"
 
+  archived = each.value.archived
+
   dynamic "template" {
     for_each = each.value.uses_template ? [true] : []
     content {

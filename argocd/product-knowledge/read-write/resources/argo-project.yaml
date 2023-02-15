@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-knowledge
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-knowledge
+      server: https://kubernetes.default.svc
+    - namespace: product-knowledge-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-knowledge.
+      policies:
+        - p, proj:project-knowledge:team-admin, applications, *, project-knowledge/*, allow
+        - p, proj:project-knowledge:team-admin, exec, create, project-knowledge/*, allow
+      groups:
+        - catenax-ng:product-knowledge
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-knowledge:read-only, applications, get, project-knowledge/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

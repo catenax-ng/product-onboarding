@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-esc-backbone
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-esc-backbone
+      server: https://kubernetes.default.svc
+    - namespace: product-esc-backbone-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-esc-backbone.
+      policies:
+        - p, proj:project-esc-backbone:team-admin, applications, *, project-esc-backbone/*, allow
+        - p, proj:project-esc-backbone:team-admin, exec, create, project-esc-backbone/*, allow
+      groups:
+        - catenax-ng:product-esc-backbone
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-esc-backbone:read-only, applications, get, project-esc-backbone/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
