@@ -1895,6 +1895,24 @@ github_repositories = {
     codeowners_available : false
     codeowners : null
     archived : false
+  },
+  "tx-digital-product-pass" : {
+    name : "tx-digital-product-pass"
+    team_name : "product-material-pass"
+    description : ""
+    visibility : "public"
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : true
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
   }
 }
 
@@ -2393,6 +2411,11 @@ github_repositories_teams = {
   "tx-vas-country-risk-backend-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "tx-vas-country-risk-backend"
+    permission : "maintain"
+  }
+  "tx-digital-product-pass-product-material-pass": {
+    team_name: "product-material-pass"
+    repository : "tx-digital-product-pass"
     permission : "maintain"
   }
 }
