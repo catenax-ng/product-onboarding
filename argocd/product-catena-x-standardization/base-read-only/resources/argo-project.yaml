@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: product-catena-x-standardization
+  name: project-catena-x-standardization
   namespace: argocd
 spec:
   description: Project for team product-catena-x-standardization
@@ -24,9 +24,9 @@ spec:
     - name: project-read-only
       description: provide read-only access to project
       policies:
-        - p, proj:product-catena-x-standardization:project-read-only, applications, get, product-catena-x-standardization/*, allow
-        - p, proj:product-catena-x-standardization:project-read-only, exec, create, product-catena-x-standardization/*, allow
+        - p, proj:project-catena-x-standardization:project-read-only, applications, get, project-catena-x-standardization/*, allow
+        - p, proj:project-catena-x-standardization:project-read-only, exec, create, project-catena-x-standardization/*, allow
       groups:
-        - catenax-ng:product-catena-x-standardization
+        - catenax-ng:product-standardization
         - catenax-ng:release-management
         - catenax-ng:test-management
