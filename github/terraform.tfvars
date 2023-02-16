@@ -181,7 +181,7 @@ github_teams = {
   }
   "traceability-spec" : {
     name: "traceability-spec"
-    description: "Content team for traceability KIT docs"
+    description: "Content team for Traceability KIT documentation"
   }
 }
 
