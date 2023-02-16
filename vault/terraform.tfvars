@@ -57,7 +57,7 @@ product_teams = {
     github_team : "product-catenax-at-home"
     avp_secret_name : "catenax-at-home"
   },
-  "product-catena-x-standardization" : {
+/*  "product-catena-x-standardization" : {
     name : "product-catena-x-standardization"
     secret_engine_name : "product-catena-x-standardization"
     ui_policy_name : "product-catena-x-standardization-rw"
@@ -65,7 +65,7 @@ product_teams = {
     approle_policy_name : "product-catena-x-standardization-ro"
     github_team : "product-catena-x-standardization"
     avp_secret_name : "product-catena-x-standardization"
-  },
+  },*/
   "data-integrity-demonstrator" : {
     name : "data-integrity-demonstrator"
     secret_engine_name : "data-integrity-demonstrator"

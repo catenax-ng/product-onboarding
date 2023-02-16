@@ -6,7 +6,7 @@ resources:
   - ../../argocd/product-behaviour-twin-pilot/read-write
   - ../../argocd/product-bpdm/read-write
   - ../../argocd/product-business-partner-certificates/read-write
-  - ../../argocd/product-catena-x-standardization/read-write
+  #- ../../argocd/product-catena-x-standardization/read-write
   - ../../argocd/product-data-format-transformer/read-write
   - ../../argocd/product-data-integrity-demonstrator/read-write
   - ../../argocd/product-dft/read-write
