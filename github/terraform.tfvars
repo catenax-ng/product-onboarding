@@ -67,8 +67,8 @@ github_teams = {
     "name" : "product-catenax-at-home",
     "description" : ""
   },
-  "product-catena-x-standardization" : {
-    "name" : "product-catena-x-standardization",
+  "product-standardization" : {
+    "name" : "product-standardization",
     "description" : ""
   },
   "product-data-integrity-demonstrator" : {
@@ -400,7 +400,7 @@ github_repositories = {
   },
   "product-catena-x-standardization" : {
     name : "product-catena-x-standardization",
-    team_name : "product-catena-x-standardization",
+    team_name : "product-standardization",
     description : "",
     visibility : "private"
     homepage_url : ""
@@ -2019,8 +2019,8 @@ github_repositories_teams = {
     repository : "catenax-at-home"
     permission : "maintain"
   },
-  "product-catena-x-standardization" : {
-    team_name : "product-catena-x-standardization"
+  "product-catena-x-standardization-product-standardization" : {
+    team_name : "product-standardization"
     repository : "product-catena-x-standardization"
     permission : "maintain"
   },
