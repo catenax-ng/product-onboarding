@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
   # Product Onboarding
   - ../../argocd/product-bpdm/read-write
-  #- ../../argocd/product-catena-x-standardization/read-write
   - ../../argocd/product-data-format-transformer/read-write
   - ../../argocd/product-essential-services/read-write
   - ../../argocd/product-managed-identity-wallets/read-write
