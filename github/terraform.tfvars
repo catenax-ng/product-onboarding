@@ -175,6 +175,10 @@ github_teams = {
     name : "product-r-strategy-assistant"
     description : ""
   }
+  "traceability-spec" : {
+    name: "traceability-spec"
+    description: "Content team for traceability KIT docs"
+  }
 }
 
 github_repositories = {
@@ -1773,7 +1777,7 @@ github_repositories = {
   "tx-traceability-foss-frontend" : {
     name : "tx-traceability-foss-frontend"
     team_name : ""
-    description : ""
+    description : "https://catenax-ng.github.io/tx-traceability-foss-backend/docs"
     visibility : "public"
     homepage_url : ""
     topics : []
@@ -1791,13 +1795,13 @@ github_repositories = {
   "tx-traceability-foss-backend" : {
     name : "tx-traceability-foss-backend"
     team_name : ""
-    description : ""
+    description : "https://catenax-ng.github.io/tx-traceability-foss-backend/docs"
     visibility : "public"
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : ""
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -1899,9 +1903,9 @@ github_repositories = {
   "tx-digital-product-pass" : {
     name : "tx-digital-product-pass"
     team_name : "product-material-pass"
-    description : ""
+    description : "Tractus-X Fork of Catena-X Digital Product Passport Application (Frontend/Backend)"
     visibility : "public"
-    homepage_url : ""
+    homepage_url : "https://materialpass.int.demo.catena-x.net"
     topics : []
     pages : {
       enabled : true
@@ -2413,9 +2417,19 @@ github_repositories_teams = {
     repository : "tx-vas-country-risk-backend"
     permission : "maintain"
   }
-  "tx-digital-product-pass-product-material-pass": {
-    team_name: "product-material-pass"
+  "tx-digital-product-pass-product-material-pass" : {
+    team_name : "product-material-pass"
     repository : "tx-digital-product-pass"
+    permission : "maintain"
+  }
+  "eclipse-tractusx.github.io-argocdadmins" : {
+    team_name : "argocdadmins"
+    repository : "eclipse-tractusx.github.io"
+    permission : "admin"
+  }
+  "eclipse-tractusx.github.io-traceability-spec" : {
+    team_name : "traceability-spec"
+    repository : "eclipse-tractusx.github.io"
     permission : "maintain"
   }
 }
