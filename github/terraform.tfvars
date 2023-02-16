@@ -67,6 +67,10 @@ github_teams = {
     "name" : "product-catenax-at-home",
     "description" : ""
   },
+  "product-catena-x-standardization" : {
+    "name" : "product-catena-x-standardization",
+    "description" : ""
+  },
   "product-data-integrity-demonstrator" : {
     "name" : "product-data-integrity-demonstrator",
     "description" : ""
@@ -382,6 +386,24 @@ github_repositories = {
     description : "",
     visibility : "public"
     homepage_url : "https://catenax-ng.github.io/docs/catenax-at-home-getting-started-guide"
+    topics : []
+    pages : {
+      enabled : false
+      branch : "main"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  },
+  "product-catena-x-standardization" : {
+    name : "product-catena-x-standardization",
+    team_name : "product-catena-x-standardization",
+    description : "",
+    visibility : "private"
+    homepage_url : ""
     topics : []
     pages : {
       enabled : false
@@ -1995,6 +2017,11 @@ github_repositories_teams = {
   "catenax-at-home-catenax-at-home" : {
     team_name : "product-catenax-at-home"
     repository : "catenax-at-home"
+    permission : "maintain"
+  },
+  "product-catena-x-standardization" : {
+    team_name : "product-catena-x-standardization"
+    repository : "product-catena-x-standardization"
     permission : "maintain"
   },
   "catenax-at-home-product-edc" : {

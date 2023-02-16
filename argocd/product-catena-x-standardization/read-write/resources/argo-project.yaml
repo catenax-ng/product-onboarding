@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: product-catena-x-standardization
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-catena-x-standardization
+      server: https://kubernetes.default.svc
+    - namespace: product-catena-x-standardization-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside product-catena-x-standardization.
+      policies:
+        - p, proj:product-catena-x-standardization:team-admin, applications, *, product-catena-x-standardization/*, allow
+        - p, proj:product-catena-x-standardization:team-admin, exec, create, product-catena-x-standardization/*, allow
+      groups:
+        - catenax-ng:product-catena-x-standardization
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:product-catena-x-standardization:read-only, applications, get, product-catena-x-standardization/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
