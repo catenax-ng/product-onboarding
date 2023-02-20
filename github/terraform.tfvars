@@ -150,11 +150,11 @@ github_teams = {
   "product-knowledge" : {
     "name" : "product-knowledge"
     "description" : "Catena-X Knowledge Agents delivers a semantically-driven and state-of-the-art compute-to-data architecture for automotive use cases based on the best GAIA-X, W3C and Big Data practices. Team Discussions: catenax-ng/product-knowledge"
-  }
+  },
   "release-management" : {
     name : "release-management"
     description : "Members will be granted permissions to manage releases on release relevant environments"
-  }
+  },
   "test-management" : {
     name : "test-management"
     description : "Members will be granted permissions to manage deployments on integration environments for testing purposes"
@@ -178,7 +178,7 @@ github_teams = {
   "product-r-strategy-assistant" : {
     name : "product-r-strategy-assistant"
     description : ""
-  }
+  },
   "traceability-spec" : {
     name: "traceability-spec"
     description: "Content team for Traceability KIT documentation"
@@ -2443,17 +2443,17 @@ github_repositories_teams = {
     team_name : "product-value-added-service"
     repository : "tx-vas-country-risk-backend"
     permission : "maintain"
-  }
+  },
   "tx-digital-product-pass-product-material-pass" : {
     team_name : "product-material-pass"
     repository : "tx-digital-product-pass"
     permission : "maintain"
-  }
+  },
   "eclipse-tractusx.github.io-argocdadmins" : {
     team_name : "argocdadmins"
     repository : "eclipse-tractusx.github.io"
     permission : "admin"
-  }
+  },
   "eclipse-tractusx.github.io-traceability-spec" : {
     team_name : "traceability-spec"
     repository : "eclipse-tractusx.github.io"
