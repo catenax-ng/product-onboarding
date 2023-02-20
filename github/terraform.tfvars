@@ -182,6 +182,10 @@ github_teams = {
   "traceability-spec" : {
     name: "traceability-spec"
     description: "Content team for Traceability KIT documentation"
+  },
+  "product-connectivity-gateway" : {
+    name: "tx-connectivity-gateway"
+    description: ""
   }
 }
 
@@ -1939,6 +1943,24 @@ github_repositories = {
     codeowners_available : false
     codeowners : null
     archived : false
+  },
+  "tx-connectivity-gateway" : {
+    name : "tx-connectivity-gateway"
+    team_name : "product-connectivity-gateway"
+    description : ""
+    visibility : "public"
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : ""
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
   }
 }
 
@@ -2457,6 +2479,11 @@ github_repositories_teams = {
   "eclipse-tractusx.github.io-traceability-spec" : {
     team_name : "traceability-spec"
     repository : "eclipse-tractusx.github.io"
+    permission : "maintain"
+  },
+  "tx-connectivity-gateway-product-connectivity-gateway" : {
+    team_name : "product-connectivity-gateway"
+    repository : "tx-connectivity-gateway"
     permission : "maintain"
   }
 }
