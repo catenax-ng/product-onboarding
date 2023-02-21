@@ -17,7 +17,7 @@ resource "github_repository" "repositories" {
   visibility             = each.value.visibility
   auto_init              = true
   has_downloads          = true
-  vulnerability_alerts   = true
+  vulnerability_alerts   = !each.value.archived
   delete_branch_on_merge = true
   is_template            = each.value.is_template
   homepage_url           = each.value.homepage_url
