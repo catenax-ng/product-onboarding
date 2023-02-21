@@ -1048,10 +1048,10 @@ github_repositories = {
   "product-battery-passport-consumer-app" : {
     name : "product-battery-passport-consumer-app"
     team_name : "product-material-pass"
-    description : "Catena-X Digital Product Passport Application (Frontend/Backend)"
+    description : "DEPRECATED: Repository moved to https://github.com/eclipse-tractusx/digital-product-pass"
     visibility : "public"
-    homepage_url : "https://materialpass.int.demo.catena-x.net"
-    topics : []
+    homepage_url : ""
+    topics : ["deprecated"]
     pages : {
       enabled : true
       branch : "gh-pages"
@@ -1061,7 +1061,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "gh-org-checks" : {
     name : "gh-org-checks"
