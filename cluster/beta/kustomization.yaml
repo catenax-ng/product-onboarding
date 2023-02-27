@@ -3,15 +3,15 @@ kind: Kustomization
 
 resources:
   # Product Onboarding
-  - ../../argocd/product-bpdm/read-write
-  - ../../argocd/product-data-format-transformer/read-write
-  - ../../argocd/product-essential-services/read-write
-  - ../../argocd/product-managed-identity-wallets/read-write
-  - ../../argocd/product-portal/read-write
-  - ../../argocd/product-semantics/read-write
-  - ../../argocd/product-traceability-foss/read-write
-  - ../../argocd/product-traceability-irs/read-write
-  - ../../argocd/product-material-pass/read-write
+  - ../../argocd/product-bpdm/read-only
+  - ../../argocd/product-data-format-transformer/read-only
+  - ../../argocd/product-essential-services/read-only
+  - ../../argocd/product-managed-identity-wallets/read-only
+  - ../../argocd/product-portal/read-only
+  - ../../argocd/product-semantics/read-only
+  - ../../argocd/product-traceability-foss/read-only
+  - ../../argocd/product-traceability-irs/read-only
+  - ../../argocd/product-material-pass/read-only
 
   - storage-class/standard-ssd-lrs-retain.yaml
   - pull-secret/secret.yaml
