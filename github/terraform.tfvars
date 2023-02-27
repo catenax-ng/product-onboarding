@@ -159,6 +159,10 @@ github_teams = {
     name : "test-management"
     description : "Members will be granted permissions to manage deployments on integration environments for testing purposes"
   },
+  "beta-admins" : {
+    name : "beta-admins"
+    description : "Members will be granted admin permissions for beta environment"
+  },
   "product-registry-twin-check" : {
     name : "product-registry-twin-check"
     description : ""
