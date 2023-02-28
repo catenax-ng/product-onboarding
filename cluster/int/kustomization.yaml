@@ -33,3 +33,5 @@ resources:
 
 patchesStrategicMerge:
   - argocd-resource-patches/project-traceability-irs.yaml
+  - argocd-resource-patches/argo-notification-cm.yaml
+  - argocd-resource-patches/argocd-notifications-secret.yaml
