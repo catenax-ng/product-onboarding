@@ -31,11 +31,12 @@ resources:
   - storage-class/standard-ssd-lrs-retain.yaml
   - pull-secret/secret.yaml
 
-patchesStrategicMerge:
-  - argocd-resource-patches/project-traceability-irs.yaml
+#patchesStrategicMerge:
+#  - argocd-resource-patches/project-traceability-irs.yaml
 #  - argocd-resource-patches/argo-notifications-cm.yaml
 
 patches:
+  - path: argocd-resource-patches/project-traceability-irs.yaml
   - path: argocd-resource-patches/argocd-notifications-secrets.yaml
-    target:
-      namespace: argocd
+#    target:
+#      namespace: argocd
