@@ -37,4 +37,13 @@ resources:
 
 patches:
   - path: argocd-resource-patches/project-traceability-irs.yaml
+    target:
+      namespace: argocd
+      kind: AppProject
+      name: project-traceability-irs
   - path: argocd-resource-patches/argocd-notifications-secrets.yaml
+    target:
+      namespace: argocd
+      kind: Secret
+      name: argocd-notifications-secret
+      labelSelector: app.kubernetes.io/instance=hotel-budapest-argo
