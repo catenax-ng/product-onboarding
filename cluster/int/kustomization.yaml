@@ -38,6 +38,4 @@ patchesStrategicMerge:
 patches:
   - path: argocd-resource-patches/argocd-notifications-secrets.yaml
     target:
-      kind: secret
-      name: argocd-notifications-secret
       namespace: argocd
