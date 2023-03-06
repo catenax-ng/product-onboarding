@@ -46,3 +46,4 @@ patches:
       namespace: argocd
       kind: Secret
       name: argocd-notifications-secret
+      labelSelector: app.kubernetes.io/instance=hotel-budapest-argo
