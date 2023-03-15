@@ -387,7 +387,7 @@ github_repositories = {
   "catenax-at-home" : {
     name : "catenax-at-home",
     team_name : "product-catenax-at-home",
-    description : "",
+    description : "⚠️ Catena-X@Home and the API-Wrapper are deprecated!!",
     visibility : "public"
     homepage_url : "https://catenax-ng.github.io/docs/catenax-at-home-getting-started-guide"
     topics : []
@@ -597,8 +597,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -816,8 +816,8 @@ github_repositories = {
     homepage_url : ""
     topics : ["catena-x", "java", "spring-boot"]
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -924,8 +924,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -981,8 +981,8 @@ github_repositories = {
     homepage_url : ""
     topics : ["catena-x", "react"]
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -1056,8 +1056,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "main"
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -1167,7 +1167,7 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
+      enabled : true
       branch : "main"
     }
     is_template : false
@@ -1207,7 +1207,7 @@ github_repositories = {
     topics : []
     pages : {
       enabled : true
-      branch : "main"
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -1242,7 +1242,7 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
+      enabled : true
       branch : "main"
     }
     is_template : false
@@ -1297,7 +1297,7 @@ github_repositories = {
     topics : []
     pages : {
       enabled : true
-      branch : "main"
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : true
@@ -1582,6 +1582,24 @@ github_repositories = {
   "product-bpdm-env" : {
     name : "product-bpdm-env"
     team_name : ""
+    description : ""
+    visibility : "public"
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : ""
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
+  "product-vcissuer" : {
+    name : "product-vcissuer"
+    team_name : "product-edc"
     description : ""
     visibility : "public"
     homepage_url : ""
@@ -2024,6 +2042,11 @@ github_repositories_teams = {
   "eclipse-tractusx.github.io-traceability-spec" : {
     team_name : "traceability-spec"
     repository : "eclipse-tractusx.github.io"
+    permission : "maintain"
+  }
+  "product-vcissuer-product-edc" : {
+    team_name : "product-edc"
+    repository : "product-vcissuer"
     permission : "maintain"
   }
 }
