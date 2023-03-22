@@ -15,6 +15,7 @@
 #    team_name : ""
 #    description : ""
 #    visibility : "public"
+#    has_issues = false
 #    homepage_url : ""
 #    topics : []
 #    pages : {
@@ -195,6 +196,7 @@ github_repositories = {
     team_name : "product-puris"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -216,6 +218,7 @@ github_repositories = {
     team_name : "product-puris"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -237,6 +240,7 @@ github_repositories = {
     team_name : "product-bpdm"
     description : "DEPRECATED"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : ["archived", "deprecated", "obsolete"]
     pages : {
@@ -255,6 +259,7 @@ github_repositories = {
     team_name : "product-essential-services"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -273,6 +278,7 @@ github_repositories = {
     team_name : "product-innovation-radar"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -291,6 +297,7 @@ github_repositories = {
     team_name : "product-semantics"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -309,6 +316,7 @@ github_repositories = {
     team_name : "product-portal"
     description : "Catena-X Portal Frontend - DEPRECATED"
     visibility : "public"
+    has_issues = false
     homepage_url : "https://portal.dev.demo.catena-x.net"
     topics : ["catena-x", "docker", "portal", "react", "typescript"]
     pages : {
@@ -327,6 +335,7 @@ github_repositories = {
     team_name : "product-portal"
     description : "Catena-X IAM - Keycloak instances - DEPRECATED"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : [
       "catena-x",
@@ -349,6 +358,7 @@ github_repositories = {
     team_name : "product-portal"
     description : "Catena-X Portal Backend - DEPRECATED"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : [
       "backend",
@@ -371,6 +381,7 @@ github_repositories = {
     team_name : "product-data-integrity-demonstrator"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -389,6 +400,7 @@ github_repositories = {
     team_name : "product-catenax-at-home",
     description : "⚠️ Catena-X@Home and the API-Wrapper are deprecated!!",
     visibility : "public"
+    has_issues = false
     homepage_url : "https://catenax-ng.github.io/docs/catenax-at-home-getting-started-guide"
     topics : []
     pages : {
@@ -407,6 +419,7 @@ github_repositories = {
     team_name : "product-standardization",
     description : "",
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -425,6 +438,7 @@ github_repositories = {
     team_name : "cx-core-schemas",
     description : "",
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -443,6 +457,7 @@ github_repositories = {
     team_name : "product-portal"
     description : "Catena-X Portal - Continuous Deployment - DEPRECATED"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : [
       "argocd",
@@ -468,6 +483,7 @@ github_repositories = {
     team_name : "product-managed-identity-wallets"
     description : "DataspaceConnector project"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -486,6 +502,7 @@ github_repositories = {
     team_name : "product-portal"
     description : "Assets used by the Catena-X Portal"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -504,6 +521,7 @@ github_repositories = {
     "team_name" : "product-managed-identity-wallets"
     "description" : "DEPRECATED"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -522,6 +540,7 @@ github_repositories = {
     team_name : "product-dft"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -540,6 +559,7 @@ github_repositories = {
     team_name : "product-dft"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -558,6 +578,7 @@ github_repositories = {
     team_name : "product-essential-services"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -576,6 +597,7 @@ github_repositories = {
     team_name : "product-essential-services"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -594,6 +616,7 @@ github_repositories = {
     team_name : "product-essential-services"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -612,6 +635,7 @@ github_repositories = {
     team_name : "product-traceability-irs"
     description : "DEPRECATED - use https://github.com/catenax-ng/tx-item-relationship-service"
     visibility : "public"
+    has_issues = false
     homepage_url : "https://catenax-ng.github.io/product-item-relationship-service/docs/"
     topics : []
     pages : {
@@ -630,6 +654,7 @@ github_repositories = {
     team_name : "product-data-integrity-demonstrator"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -648,6 +673,7 @@ github_repositories = {
     team_name : "product-esc-backbone"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : "https://argo.dev.demo.catena-x.net/"
     topics : []
     pages : {
@@ -669,6 +695,7 @@ github_repositories = {
     team_name : "product-traceability-foss"
     description : "DEPRECATED - use https://github.com/eclipse-tractusx/traceability-foss-frontend"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -687,6 +714,7 @@ github_repositories = {
     team_name : "product-traceability-foss"
     description : "DEPRECATED - use https://github.com/eclipse-tractusx/traceability-foss-backend"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -705,6 +733,7 @@ github_repositories = {
     team_name : "product-esc-backbone"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -723,6 +752,7 @@ github_repositories = {
     team_name : "product-data-integrity-demonstrator"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -741,6 +771,7 @@ github_repositories = {
     team_name : "product-explorer"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -759,6 +790,7 @@ github_repositories = {
     team_name : "product-managed-identity-wallets"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -777,6 +809,7 @@ github_repositories = {
     team_name : "product-behaviour-twin-pilot"
     description : "PLEASE ADD DESCRIPTION"
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -795,6 +828,7 @@ github_repositories = {
     team_name : "product-behaviour-twin-pilot"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -813,6 +847,7 @@ github_repositories = {
     team_name : "product-value-added-service"
     description : "Repository for Value Added Service - Country Risk Backend"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : ["catena-x", "java", "spring-boot"]
     pages : {
@@ -831,6 +866,7 @@ github_repositories = {
     team_name : "team-foss"
     description : ""
     visibility : "public"
+    has_issues: false
     homepage_url : ""
     topics : []
     pages : {
@@ -849,6 +885,8 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "Bootstrapping k8s clusters with ready to use ArgoCD for k8s management."
     visibility : "public"
+    has_issues = true
+    has_issues = false
     homepage_url : ""
     topics : ["internal"]
     pages : {
@@ -867,6 +905,7 @@ github_repositories = {
     team_name : "product-edc"
     description : "Repository for Catena-X specific eclipse dataspace connector apps"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -885,6 +924,7 @@ github_repositories = {
     team_name : "product-team-example"
     description : "Example project for Argo CD integration and also landing pages for ArgoCD environments"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : ["ci-cd", "helm", "internal", "kubernetes"]
     pages : {
@@ -903,6 +943,7 @@ github_repositories = {
     team_name : "team-foss"
     description : "https://catenax-ng.github.io"
     visibility : "public"
+    has_issues = false
     homepage_url : "https://catenax-ng.github.io"
     topics : ["internal"]
     pages : {
@@ -921,6 +962,7 @@ github_repositories = {
     team_name : "product-test-data-generator"
     description : "Catena-X Testdata Generator"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -939,6 +981,7 @@ github_repositories = {
     team_name : "product-portal"
     description : "A minimal project template with a CI pipeline for docker"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -957,6 +1000,7 @@ github_repositories = {
     team_name : "product-portal"
     description : "Catena-X Portal Frontend Registration - DEPRECATED"
     visibility : "public"
+    has_issues = false
     homepage_url : "https://portal.demo.catena-x.net/registration/"
     topics : ["catena-x", "frontend", "portal", "registration"]
     pages : {
@@ -978,6 +1022,7 @@ github_repositories = {
     team_name : "product-value-added-service"
     description : "Repository for Value Added Service - Country Risk Frontend Dashboard"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : ["catena-x", "react"]
     pages : {
@@ -996,6 +1041,7 @@ github_repositories = {
     team_name : "product-knowledge"
     description : "Catena-X Knowledge Agents Architecture"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : ["sparql", "rdf", "ids", "edc", "catena-x"]
     pages : {
@@ -1014,6 +1060,7 @@ github_repositories = {
     team_name : "product-material-pass"
     description : "DEPRECATED: Repository moved to https://github.com/eclipse-tractusx/digital-product-pass"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : ["deprecated"]
     pages : {
@@ -1032,6 +1079,7 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "GitHub workflow to compile and overview of repository defaults compliance throughout the GitHub org"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1053,6 +1101,7 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "DevSecOps team maintenance dashboard"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1074,6 +1123,7 @@ github_repositories = {
     team_name : "product-essential-services"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1092,6 +1142,7 @@ github_repositories = {
     team_name : "product-value-added-service"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1110,6 +1161,7 @@ github_repositories = {
     team_name : "product-value-added-service"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1128,6 +1180,7 @@ github_repositories = {
     team_name : "product-value-added-service"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1146,6 +1199,7 @@ github_repositories = {
     team_name : "product-value-added-service"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1164,6 +1218,7 @@ github_repositories = {
     team_name : "product-value-added-service"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1182,6 +1237,7 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "Consortia deployment configuration for Catena-X releases"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1203,6 +1259,7 @@ github_repositories = {
     team_name : "product-essential-services"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1221,6 +1278,7 @@ github_repositories = {
     team_name : "product-registry-twin-check"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1239,6 +1297,7 @@ github_repositories = {
     team_name : "product-dft"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1257,6 +1316,7 @@ github_repositories = {
     team_name : "product-business-partner-certificates"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1275,6 +1335,7 @@ github_repositories = {
     team_name : "product-et-demonstrators"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1293,6 +1354,7 @@ github_repositories = {
     team_name : "product-item-relationship-service-frontend"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1314,6 +1376,7 @@ github_repositories = {
     team_name : "product-esc-backbone"
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1332,6 +1395,7 @@ github_repositories = {
     team_name : "product-behaviour-twin-pilot"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1350,6 +1414,7 @@ github_repositories = {
     team_name : "product-behaviour-twin-pilot"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1368,6 +1433,7 @@ github_repositories = {
     team_name : "product-behaviour-twin-pilot"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1386,6 +1452,7 @@ github_repositories = {
     team_name : "product-r-strategy-assistant"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1404,6 +1471,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1422,6 +1490,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1440,6 +1509,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1458,6 +1528,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1476,6 +1547,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1494,6 +1566,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1512,6 +1585,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "private"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1530,6 +1604,7 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "Product onboarding to Catena-X environment(s)"
     visibility : "public"
+    has_issues = true
     homepage_url : ""
     topics : ["onboarding", "system-team", "consortia-environments"]
     pages : {
@@ -1548,6 +1623,7 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "Destination Terraform/* - 100"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1566,6 +1642,7 @@ github_repositories = {
     team_name : ""
     description : "Catena-X Portal Swagger"
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1584,6 +1661,7 @@ github_repositories = {
     team_name : ""
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
@@ -1602,6 +1680,7 @@ github_repositories = {
     team_name : "product-edc"
     description : ""
     visibility : "public"
+    has_issues = false
     homepage_url : ""
     topics : []
     pages : {
