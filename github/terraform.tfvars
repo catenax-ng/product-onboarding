@@ -886,7 +886,6 @@ github_repositories = {
     description : "Bootstrapping k8s clusters with ready to use ArgoCD for k8s management."
     visibility : "public"
     has_issues = true
-    has_issues = false
     homepage_url : ""
     topics : ["internal"]
     pages : {
