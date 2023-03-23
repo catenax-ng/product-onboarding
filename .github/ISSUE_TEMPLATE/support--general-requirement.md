@@ -1,5 +1,5 @@
 ---
-name: 'Support: General Requirement'
+name: 'Support: Other topics'
 about: If you have a general question
 title: ''
 labels: support
@@ -16,4 +16,4 @@ A clear and concise description of what you want to happen.
 Additional context
 Add any other context or screenshots about the feature request here.
 
-GitHub user: *your_user*
+GitHub user: *your_github_user*
