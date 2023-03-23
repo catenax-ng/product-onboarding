@@ -2,7 +2,7 @@
 name: 'Support: Other topics'
 about: If you have a general question
 title: ''
-labels: support
+labels: help wanted, support
 assignees: ''
 
 ---
