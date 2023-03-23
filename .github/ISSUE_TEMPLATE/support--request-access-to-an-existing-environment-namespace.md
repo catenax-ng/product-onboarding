@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Environment: DEV / INT
-namespace: name_of_namespace
-GitHub team: team_that_should_have_access
-GitHub users: github_user_that_should_have_access
+Environment: *DEV / INT*  
+namespace: *name_of_namespace*  
+GitHub team: *team_that_should_have_access*  
+GitHub users: *github_user_that_should_have_access*

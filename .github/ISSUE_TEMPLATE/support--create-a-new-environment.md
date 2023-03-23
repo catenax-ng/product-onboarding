@@ -3,8 +3,7 @@ name: 'Support: Create a New Environment'
 about: If you need a hole new Environment for a good reason
 title: New Environment
 labels: support
-assignees: FaGru3n
-
+assignees: ''
 ---
 
 Purpose: environment_purpose

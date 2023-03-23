@@ -13,5 +13,5 @@ Veracode (initial setup, github integration)
 Trivvy
 KICS
 Gitguardian
-Pentesting
+Pen-testing
 Security risk assessment (RRA, Threat modeling, Code reviews)

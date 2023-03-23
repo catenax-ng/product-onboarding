@@ -1,14 +1,14 @@
 ---
 name: 'Support: Invite member to GitHub Org'
-about: If you need to invite a new Member within X Orga
-title: 'GitHub: Invite member '
+about: If you need to invite a new Member within Catena-X NG Organisation
+title: 'GitHub: Invite member'
 labels: support
 assignees: ''
 
 ---
 
-new GitHub user: GITHUB-USER-ID
+new GitHub user: *GITHUB-USER-ID*
 
-who can verfiy that the new user is a Member of X Org
+who can verify that the new user is a Member of Catena-X NG Organisation
 
-Vouching person: your_PO
+Vouching person: *Your_Product-Owner*
