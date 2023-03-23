@@ -11,7 +11,7 @@ resource "github_repository" "repositories" {
   name        = each.value.name
   description = each.value.description
 
-  has_issues             = false
+  has_issues             = each.value.has_issues
   has_projects           = false
   has_wiki               = false
   visibility             = each.value.visibility
