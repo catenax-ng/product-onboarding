@@ -8,7 +8,7 @@ jobs:
   add-comment-to-inform-system-team:
     # based on the issue label write a comment to inform team
     if: github.event.label.name == 'support'
-    runs-on: test-runner
+    runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
