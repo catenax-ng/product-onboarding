@@ -19,3 +19,17 @@ jobs:
           # Here you can add you personal style of comment messages and which gh-team should be informed
           body: |
             Info: @catenax-ng/argocdadmins This support issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
+  add-comment-to-inform-security-team:
+    # based on the issue label write a comment to inform team
+    if: github.event.label.name == 'security'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@v2.1.1
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          # Here you can add you personal style of comment messages and which gh-team should be informed
+          body: |
+            Info: @catenax-ng/team-security This security support issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
