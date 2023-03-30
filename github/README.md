@@ -5,7 +5,7 @@
 In our case we have one GitHub Organization which contains all GitHub repository information within
  catena-x ng for each product.
 
-## Assigning a team as contributor to a repository via terraform
+## Assigning a team as contributor to a repository via terraform  
 
 Contribution access to a repository in our GitHub organization is granted on a team level. We do not
 grant this kind of access to individuals.
