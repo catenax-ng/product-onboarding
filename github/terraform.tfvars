@@ -419,7 +419,7 @@ github_repositories = {
     team_name : "product-standardization",
     description : "",
     visibility : "private"
-    has_issues : false
+    has_issues : true
     homepage_url : ""
     topics : []
     pages : {
@@ -1038,11 +1038,11 @@ github_repositories = {
   "product-knowledge" : {
     name : "product-knowledge"
     team_name : "product-knowledge"
-    description : "Catena-X Knowledge Agents Architecture"
+    description : "Catena-X Knowledge Agents Kit"
     visibility : "public"
     has_issues : false
     homepage_url : ""
-    topics : ["sparql", "rdf", "ids", "edc", "catena-x"]
+    topics : ["sparql", "rdf", "ids", "edc", "catena-x", "owl"]
     pages : {
       enabled : true
       branch : "gh-pages"
@@ -1675,7 +1675,7 @@ github_repositories = {
     archived : false
   }
   "product-vcissuer" : {
-    name : "product-vcissuer"
+    name : "product-lab-ssi"
     team_name : "product-edc"
     description : ""
     visibility : "public"
@@ -1683,8 +1683,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : ""
+      enabled : true
+      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -2124,7 +2124,7 @@ github_repositories_teams = {
   }
   "product-vcissuer-product-edc" : {
     team_name : "product-edc"
-    repository : "product-vcissuer"
+    repository : "product-lab-ssi"
     permission : "maintain"
   }
 }
