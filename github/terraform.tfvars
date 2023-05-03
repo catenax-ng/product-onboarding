@@ -419,7 +419,7 @@ github_repositories = {
     team_name : "product-standardization",
     description : "",
     visibility : "private"
-    has_issues : false
+    has_issues : true
     homepage_url : ""
     topics : []
     pages : {
