@@ -1693,6 +1693,44 @@ github_repositories = {
     codeowners : null
     archived : false
   }
+  "product-vcissuer" : {
+    name : "product-lab-ssi"
+    team_name : "product-edc"
+    description : ""
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : true
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
+  "product-portal-tools" : {
+    name : "product-portal-tools"
+    team_name : "product-portal"
+    description : ""
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : true
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
 }
 
 github_repositories_teams = {
@@ -2125,6 +2163,11 @@ github_repositories_teams = {
   "product-vcissuer-product-edc" : {
     team_name : "product-edc"
     repository : "product-lab-ssi"
+    permission : "maintain"
+  }
+  "product-portal-tools-product-portal" : {
+    team_name : "product-portal"
+    repository : "product-portal-tools"
     permission : "maintain"
   }
 }
