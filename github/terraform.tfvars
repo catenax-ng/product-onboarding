@@ -188,6 +188,10 @@ github_teams = {
     name: "traceability-spec"
     description: "Content team for Traceability KIT documentation"
   }
+  "product-data-governance" : {
+    name: "product-data-governance"
+    description: ""
+  }
 }
 
 github_repositories = {
@@ -1715,6 +1719,25 @@ github_repositories = {
   "product-portal-tools" : {
     name : "product-portal-tools"
     team_name : "product-portal"
+    description : "Catena-X Portal Tools"
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : true
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
+  "product-data-governance" : {
+    name : "product-data-governance"
+    team_name : "product-data-governance"
     description : ""
     visibility : "public"
     has_issues : false
@@ -2168,6 +2191,11 @@ github_repositories_teams = {
   "product-portal-tools-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-tools"
+    permission : "maintain"
+  }
+  "product-data-governance-product-data-governance" : {
+    team_name : "product-data-governance"
+    repository : "product-data-governance"
     permission : "maintain"
   }
 }
