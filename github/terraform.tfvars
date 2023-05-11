@@ -185,12 +185,12 @@ github_teams = {
     description : ""
   },
   "traceability-spec" : {
-    name: "traceability-spec"
-    description: "Content team for Traceability KIT documentation"
+    name : "traceability-spec"
+    description : "Content team for Traceability KIT documentation"
   }
   "product-data-governance" : {
-    name: "product-data-governance"
-    description: ""
+    name : "product-data-governance"
+    description : ""
   }
 }
 
@@ -870,7 +870,7 @@ github_repositories = {
     team_name : "team-foss"
     description : ""
     visibility : "public"
-    has_issues: false
+    has_issues : false
     homepage_url : ""
     topics : []
     pages : {
@@ -1754,6 +1754,25 @@ github_repositories = {
     codeowners : null
     archived : false
   }
+  "product-ontology" : {
+    name : "product-ontology"
+    team_name : "product-knowledge"
+    description : ""
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
 }
 
 github_repositories_teams = {
@@ -2196,6 +2215,11 @@ github_repositories_teams = {
   "product-data-governance-product-data-governance" : {
     team_name : "product-data-governance"
     repository : "product-data-governance"
+    permission : "maintain"
+  }
+  "product-ontology-product-knowledge" : {
+    team_name : "product-knowledge"
+    repository : "product-ontology"
     permission : "maintain"
   }
 }
