@@ -111,6 +111,15 @@ product_teams = {
     github_team : "product-innovation-radar"
     avp_secret_name : "innovation-radar"
   },
+  "data-governance" : {
+    name : "data-governance",
+    secret_engine_name : "data-governance"
+    ui_policy_name : "data-governance-rw"
+    approle_name : "data-governance"
+    approle_policy_name : "data-governance-ro"
+    github_team : "product-data-governance"
+    avp_secret_name : "data-governance"
+  },
   "managed-identity-wallets" : {
     name : "managed-identity-wallets"
     secret_engine_name : "managed-identity-wallets"
