@@ -187,10 +187,14 @@ github_teams = {
   "traceability-spec" : {
     name : "traceability-spec"
     description : "Content team for Traceability KIT documentation"
-  }
+  },
   "product-data-governance" : {
     name : "product-data-governance"
     description : ""
+  },
+  "bpdm-documentation" : {
+    name : "bpdm-documentation"
+    description : "Content team for product-bpdm-documentation"
   }
 }
 
@@ -1810,6 +1814,25 @@ github_repositories = {
     codeowners_available : false
     codeowners : null
     archived : false
+  },
+  "product-bpdm-documentation" : {
+    name : "product-bpdm-documentation"
+    team_name : "bpdm-documentation"
+    description : ""
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
   }
 }
 
@@ -2268,6 +2291,11 @@ github_repositories_teams = {
   "product-agents-product-knowledge" : {
     team_name : "product-knowledge"
     repository : "product-agents"
+    permission : "maintain"
+  },
+  "product-bpdm-documentation-bpdm-documentation" : {
+    team_name : "bpdm-documentation"
+    repository : "product-bpdm-documentation"
     permission : "maintain"
   }
 }
