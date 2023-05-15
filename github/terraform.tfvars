@@ -1773,6 +1773,44 @@ github_repositories = {
     codeowners : null
     archived : false
   }
+  "product-agents-edc" : {
+    name : "product-agents-edc"
+    team_name : "product-knowledge"
+    description : ""
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : true
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
+  "product-agents" : {
+    name : "product-agents"
+    team_name : "product-knowledge"
+    description : ""
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : true
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
 }
 
 github_repositories_teams = {
@@ -2220,6 +2258,16 @@ github_repositories_teams = {
   "product-ontology-product-knowledge" : {
     team_name : "product-knowledge"
     repository : "product-ontology"
+    permission : "maintain"
+  }
+  "product-agents-edc-product-knowledge" : {
+    team_name : "product-knowledge"
+    repository : "product-agents-edc"
+    permission : "maintain"
+  }
+  "product-agents-product-knowledge" : {
+    team_name : "product-knowledge"
+    repository : "product-agents"
     permission : "maintain"
   }
 }
