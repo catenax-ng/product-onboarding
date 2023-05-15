@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-data-governance
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-data-governance
+      server: https://kubernetes.default.svc
+    - namespace: product-data-governance-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-data-governance.
+      policies:
+        - p, proj:project-data-governance:team-admin, applications, *, project-data-governance/*, allow
+        - p, proj:project-data-governance:team-admin, exec, create, project-data-governance/*, allow
+      groups:
+        - catenax-ng:product-data-governance
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-data-governance:read-only, applications, get, project-data-governance/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
