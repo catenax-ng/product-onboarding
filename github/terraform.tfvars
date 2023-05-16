@@ -196,8 +196,8 @@ github_teams = {
     name : "bpdm-documentation"
     description : "Content team for product-bpdm-documentation"
   },
-  "cgi-dcm-foss" : {
-    name : "cgi-dcm-foss"
+  "product-cgi-dcm-foss" : {
+    name : "product-cgi-dcm-foss"
     description : "Content team for tx-dcm-backend"
   }
 }
