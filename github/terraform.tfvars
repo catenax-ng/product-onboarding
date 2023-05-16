@@ -195,6 +195,10 @@ github_teams = {
   "bpdm-documentation" : {
     name : "bpdm-documentation"
     description : "Content team for product-bpdm-documentation"
+  },
+  "cgi-dcm-foss" : {
+    name : "cgi-dcm-foss"
+    description : "Content team for tx-dcm-backend"
   }
 }
 
@@ -1780,11 +1784,11 @@ github_repositories = {
   "product-agents-edc" : {
     name : "product-agents-edc"
     team_name : "product-knowledge"
-    description : ""
+    description : "EDC Agent Plane"
     visibility : "public"
     has_issues : false
-    homepage_url : ""
-    topics : []
+    homepage_url : "https://catenax-ng.github.io/product-knowledge/"
+    topics : ["catena-x","eclipse-dataspace-components","semantic-web","sparql"]
     pages : {
       enabled : true
       branch : "gh-pages"
@@ -1799,11 +1803,11 @@ github_repositories = {
   "product-agents" : {
     name : "product-agents"
     team_name : "product-knowledge"
-    description : ""
+    description : "Reference Implementations of Knowledge Agents"
     visibility : "public"
     has_issues : false
-    homepage_url : ""
-    topics : []
+    homepage_url : "https://catenax-ng.github.io/product-knowledge/"
+    topics : ["catena-x","semantic-web","sparql"]
     pages : {
       enabled : true
       branch : "gh-pages"
