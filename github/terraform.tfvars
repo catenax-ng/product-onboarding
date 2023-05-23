@@ -1837,6 +1837,25 @@ github_repositories = {
     codeowners_available : false
     codeowners : null
     archived : false
+  },
+  ".github" : {
+    name : ".github"
+    team_name : "argocdadmins"
+    description : "Catena-X NG organisation repository"
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
   }
 }
 
@@ -2301,5 +2320,10 @@ github_repositories_teams = {
     team_name : "bpdm-documentation"
     repository : "product-bpdm-documentation"
     permission : "maintain"
+  },
+  ".github-argocdadmins" : {
+    team_name : "argocdadmins"
+    repository : ".github"
+    permission : "admin"
   }
 }
