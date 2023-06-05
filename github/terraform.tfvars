@@ -1827,7 +1827,7 @@ github_repositories = {
     name : "product-bpdm-documentation"
     team_name : "bpdm-documentation"
     description : ""
-    visibility : "public"
+    visibility : "private"
     has_issues : false
     homepage_url : ""
     topics : []
@@ -2288,11 +2288,6 @@ github_repositories_teams = {
   "eclipse-tractusx.github.io-traceability-spec" : {
     team_name : "traceability-spec"
     repository : "eclipse-tractusx.github.io"
-    permission : "maintain"
-  }
-  "product-vcissuer-product-edc" : {
-    team_name : "product-edc"
-    repository : "product-lab-ssi"
     permission : "maintain"
   }
   "product-portal-tools-product-portal" : {
