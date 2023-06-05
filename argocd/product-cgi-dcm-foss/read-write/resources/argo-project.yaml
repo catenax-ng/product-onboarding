@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-cgi-dcm-foss
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-cgi-dcm-foss
+      server: https://kubernetes.default.svc
+    - namespace: product-cgi-dcm-foss-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-cgi-dcm-foss.
+      policies:
+        - p, proj:project-cgi-dcm-foss:team-admin, applications, *, project-cgi-dcm-foss/*, allow
+        - p, proj:project-cgi-dcm-foss:team-admin, exec, create, project-cgi-dcm-foss/*, allow
+      groups:
+        - catenax-ng:product-cgi-dcm-foss
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-cgi-dcm-foss:read-only, applications, get, project-cgi-dcm-foss/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
