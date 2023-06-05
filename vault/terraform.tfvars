@@ -255,5 +255,14 @@ product_teams = {
     approle_policy_name : "r-strategy-assistant-ro"
     github_team : "product-r-strategy-assistant"
     avp_secret_name : "r-strategy-assistant"
+  },
+  "cgi-dcm-foss" : {
+    name : "cgi-dcm-foss",
+    secret_engine_name : "cgi-dcm-foss"
+    ui_policy_name : "cgi-dcm-foss-rw"
+    approle_name : "cgi-dcm-foss"
+    approle_policy_name : "cgi-dcm-foss-ro"
+    github_team : "product-cgi-dcm-foss"
+    avp_secret_name : "cgi-dcm-foss"
   }
 }
