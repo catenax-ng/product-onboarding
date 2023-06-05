@@ -128,6 +128,10 @@ github_teams = {
     "name" : "product-traceability-foss",
     "description" : ""
   },
+  "product-traceability-foss-admins" : {
+    "name" : "product-traceability-foss-admins",
+    "description" : "group for bypassing branch protection"
+  },
   "product-traceability-irs" : {
     "name" : "product-traceability-irs",
     "description" : ""
