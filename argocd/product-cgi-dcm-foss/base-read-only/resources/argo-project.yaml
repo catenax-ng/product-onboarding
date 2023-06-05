@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-cgi-dcm-foss
+  namespace: argocd
+spec:
+  description: Project for team product-cgi-dcm-foss
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-cgi-dcm-foss
+      server: https://kubernetes.default.svc
+    - namespace: product-cgi-dcm-foss-pen
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-cgi-dcm-foss:project-read-only, applications, get, project-cgi-dcm-foss/*, allow
+        - p, proj:project-cgi-dcm-foss:project-read-only, exec, create, project-cgi-dcm-foss/*, allow
+      groups:
+        - catenax-ng:product-cgi-dcm-foss
+        - catenax-ng:release-management
+        - catenax-ng:test-management
