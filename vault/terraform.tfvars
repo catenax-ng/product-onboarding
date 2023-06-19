@@ -8,7 +8,7 @@
 #   approle_name : "<new-vault-app-role-name>"
 #   approle_policy_name : "<new-vault-product-technical-permissions-for-vault-default-ro>"
 #   github_team : "<new-product-team-gh-team-name>"
-#   avp_secret_name : "<new-argocd-vault-plugin-sercret-for-new-product-team>"
+#   avp_secret_name : "<new-argocd-vault-plugin-secret-for-new-product-team>"
 # },
 
 product_teams = {
@@ -255,5 +255,14 @@ product_teams = {
     approle_policy_name : "cgi-dcm-foss-ro"
     github_team : "product-cgi-dcm-foss"
     avp_secret_name : "cgi-dcm-foss"
+  },
+  "quality-foss-app" : {
+    name : "quality-foss-app",
+    secret_engine_name : "quality-foss-app"
+    ui_policy_name : "quality-foss-app-rw"
+    approle_name : "quality-foss-app"
+    approle_policy_name : "quality-foss-app-ro"
+    github_team : "product-quality-foss-app-team"
+    avp_secret_name : "quality-foss-app"
   }
 }
