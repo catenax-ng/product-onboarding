@@ -203,6 +203,10 @@ github_teams = {
   "product-cgi-dcm-foss" : {
     name : "product-cgi-dcm-foss"
     description : "Content team for tx-dcm-backend"
+  },
+  "product-quality-foss-app-team" : {
+    name : "product-quality-foss-app-team"
+    description : ""
   }
 }
 
@@ -1116,7 +1120,7 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "DevSecOps team maintenance dashboard"
     visibility : "public"
-    has_issues : false
+    has_issues : true
     homepage_url : ""
     topics : []
     pages : {
@@ -1769,7 +1773,7 @@ github_repositories = {
   "product-ontology" : {
     name : "product-ontology"
     team_name : "product-knowledge"
-    description : ""
+    description : "Tractus-X Ontology"
     visibility : "public"
     has_issues : false
     homepage_url : ""
@@ -1846,6 +1850,25 @@ github_repositories = {
     name : ".github"
     team_name : "argocdadmins"
     description : "Catena-X NG organisation repository"
+    visibility : "public"
+    has_issues : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
+  "product-quality-foss-app" : {
+    name : "product-quality-foss-app"
+    team_name : "product-quality-foss-app-team"
+    description : ""
     visibility : "public"
     has_issues : false
     homepage_url : ""
@@ -2324,5 +2347,10 @@ github_repositories_teams = {
     team_name : "argocdadmins"
     repository : ".github"
     permission : "admin"
+  },
+  "product-quality-foss-app-product-quality-foss-app-team" : {
+    team_name : "product-quality-foss-app-team"
+    repository : "product-quality-foss-app"
+    permission : "maintain"
   }
 }
