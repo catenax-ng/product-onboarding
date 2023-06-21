@@ -57,15 +57,6 @@ product_teams = {
     github_team : "product-catenax-at-home"
     avp_secret_name : "catenax-at-home"
   },
-  "data-integrity-demonstrator" : {
-    name : "data-integrity-demonstrator"
-    secret_engine_name : "data-integrity-demonstrator"
-    ui_policy_name : "data-integrity-demonstrator-rw"
-    approle_name : "data-integrity-demonstrator"
-    approle_policy_name : "data-integrity-demonstrator-ro"
-    github_team : "product-data-integrity-demonstrator"
-    avp_secret_name : "data-integrity-demonstrator"
-  },
   "dft" : {
     name : "dft",
     secret_engine_name : "dft"
