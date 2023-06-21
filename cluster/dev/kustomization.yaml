@@ -9,7 +9,6 @@ resources:
   - ../../argocd/product-catenax-at-home/read-write
   - ../../argocd/product-data-format-transformer/read-write
   - ../../argocd/product-data-governance/read-write
-  - ../../argocd/product-data-integrity-demonstrator/read-write
   - ../../argocd/product-dft/read-write
   - ../../argocd/product-edc/read-write
   - ../../argocd/product-esc-backbone/read-write

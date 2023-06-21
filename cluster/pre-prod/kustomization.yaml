@@ -7,7 +7,6 @@ resources:
   - ../../argocd/product-bpdm/base-read-only
   - ../../argocd/product-business-partner-certificates/base-read-only
   - ../../argocd/product-data-format-transformer/base-read-only
-  - ../../argocd/product-data-integrity-demonstrator/base-read-only
   - ../../argocd/product-dft/base-read-only
   - ../../argocd/product-edc/base-read-only
   - ../../argocd/product-esc-backbone/base-read-only
