@@ -72,10 +72,6 @@ github_teams = {
     "name" : "product-standardization",
     "description" : ""
   },
-  "product-data-integrity-demonstrator" : {
-    "name" : "product-data-integrity-demonstrator",
-    "description" : ""
-  },
   "product-dft" : {
     "name" : "product-dft",
     "description" : ""
@@ -392,25 +388,6 @@ github_repositories = {
     codeowners : null
     archived : false
   },
-  "product-data-integrity-demonstrator" : {
-    name : "product-data-integrity-demonstrator"
-    team_name : "product-data-integrity-demonstrator"
-    description : ""
-    visibility : "public"
-    has_issues : false
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : "main"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
   "catenax-at-home" : {
     name : "catenax-at-home",
     team_name : "product-catenax-at-home",
@@ -665,25 +642,6 @@ github_repositories = {
     codeowners : null
     archived : true
   },
-  "product-testdata-2-edc" : {
-    name : "product-testdata-2-edc"
-    team_name : "product-data-integrity-demonstrator"
-    description : ""
-    visibility : "public"
-    has_issues : false
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : "main"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
   "product-esc-backbone" : {
     name : "product-esc-backbone"
     team_name : "product-esc-backbone"
@@ -747,25 +705,6 @@ github_repositories = {
   "product-esc-backbone-code" : {
     name : "product-esc-backbone-code"
     team_name : "product-esc-backbone"
-    description : ""
-    visibility : "private"
-    has_issues : false
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : "main"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "product-trace-cs-webapp" : {
-    name : "product-trace-cs-webapp"
-    team_name : "product-data-integrity-demonstrator"
     description : ""
     visibility : "private"
     has_issues : false
@@ -1930,11 +1869,6 @@ github_repositories_teams = {
     repository : "product-portal-backend"
     permission : "pull"
   },
-  "product-data-integrity-demonstrator-product-data-integrity-demonstrator" : {
-    team_name : "product-data-integrity-demonstrator"
-    repository : "product-data-integrity-demonstrator"
-    permission : "maintain"
-  },
   "catenax-at-home-catenax-at-home" : {
     team_name : "product-catenax-at-home"
     repository : "catenax-at-home"
@@ -2009,11 +1943,6 @@ github_repositories_teams = {
     team_name : "product-traceability-irs"
     repository : "product-item-relationship-service"
     permission : "pull"
-  },
-  "product-testdata-2-edc-product-data-integrity-demonstrator" : {
-    team_name : "product-data-integrity-demonstrator"
-    repository : "product-testdata-2-edc"
-    permission : "maintain"
   },
   "product-esc-backbone-product-esc-backbone" : {
     team_name : "product-esc-backbone"
@@ -2204,11 +2133,6 @@ github_repositories_teams = {
     team_name : "product-managed-identity-wallets"
     repository : "catena-x-release-deployment"
     permission : "push"
-  },
-  "product-data-integrity-demonstrator-product-trace-cs-webapp" : {
-    team_name : "product-data-integrity-demonstrator"
-    repository : "product-trace-cs-webapp"
-    permission : "maintain"
   },
   "product-registry-twin-check-product-registry-twin-check" : {
     team_name : "product-registry-twin-check"
