@@ -1055,7 +1055,7 @@ github_repositories = {
     team_name : "argocdadmins"
     description : "DevSecOps team maintenance dashboard"
     visibility : "public"
-    has_issues : false
+    has_issues : true
     homepage_url : ""
     topics : []
     pages : {
@@ -1708,7 +1708,7 @@ github_repositories = {
   "product-ontology" : {
     name : "product-ontology"
     team_name : "product-knowledge"
-    description : ""
+    description : "Tractus-X Ontology"
     visibility : "public"
     has_issues : false
     homepage_url : ""
