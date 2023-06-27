@@ -1814,7 +1814,7 @@ github_repositories = {
     has_issues : false
     has_discussions : false
     homepage_url : "https://catenax-ng.github.io/product-knowledge/"
-    topics : ["catena-x","eclipse-dataspace-components","semantic-web","sparql"]
+    topics : ["catena-x", "eclipse-dataspace-components", "semantic-web", "sparql"]
     pages : {
       enabled : true
       branch : "gh-pages"
@@ -1834,7 +1834,7 @@ github_repositories = {
     has_issues : false
     has_discussions : false
     homepage_url : "https://catenax-ng.github.io/product-knowledge/"
-    topics : ["catena-x","semantic-web","sparql"]
+    topics : ["catena-x", "semantic-web", "sparql"]
     pages : {
       enabled : true
       branch : "gh-pages"
