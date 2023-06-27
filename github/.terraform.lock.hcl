@@ -5,6 +5,7 @@ provider "registry.terraform.io/hashicorp/azurerm" {
   version     = "3.61.0"
   constraints = "~> 3.0"
   hashes = [
+    "h1:3qOZEe76cSc1CjSn86j3ItrJk/4xv2UL/g8KkOUaWYo=",
     "h1:ygpAv2ggEm3aMJTPvlvVaPdegoxriKpDSXSbIO9qqB4=",
     "zh:1441e4e9b63801bc2432b1c06e0d202e66946c57abbf553d7f88fba5986e8f59",
     "zh:291f0db2808724119a079f9a30254dbeae4a450dbacdd8bbb821d9332b842b25",
@@ -26,6 +27,7 @@ provider "registry.terraform.io/integrations/github" {
   constraints = "~> 5.0"
   hashes = [
     "h1:pl8NzGfJbF+qknTm5qTKqVEB4O1skWhPc9Y4PclT6NM=",
+    "h1:qf8GCqyBYei1T13oaHzJGijih3YfP+vpIwV/kDlZLDI=",
     "zh:07e5b7926cab87b0536434ea2df3a47cb0f507cc9364434c75721cf24fd1517a",
     "zh:0fd7965bc092443d5a1bd0b6ac6da36a353bd704db235c7cbfc8c6e702af2299",
     "zh:131cd9129801228e2ce20a8e200625077ce1b54e538bdd0de8747c7152515612",
