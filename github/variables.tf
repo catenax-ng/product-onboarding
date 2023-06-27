@@ -8,6 +8,7 @@ variable "github_repositories" {
     team_name    = string
     visibility   = string
     has_issues   = bool
+    has_discussions = bool
     homepage_url = string
     topics       = set(string)
     pages        = object({
