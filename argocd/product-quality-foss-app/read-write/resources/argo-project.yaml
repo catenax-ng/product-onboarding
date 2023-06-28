@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-quality-foss-app
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-quality-foss-app
+      server: https://kubernetes.default.svc
+    - namespace: product-quality-foss-app-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-quality-foss-app.
+      policies:
+        - p, proj:project-quality-foss-app:team-admin, applications, *, project-quality-foss-app/*, allow
+        - p, proj:project-quality-foss-app:team-admin, exec, create, project-quality-foss-app/*, allow
+      groups:
+        - catenax-ng:product-quality-foss-app
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-quality-foss-app:read-only, applications, get, project-quality-foss-app/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

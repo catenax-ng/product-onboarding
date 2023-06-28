@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-quality-foss-app
+  namespace: argocd
+spec:
+  description: Project for team quality-foss-app
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-quality-foss-app
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-quality-foss-app:project-read-only, applications, get, project-quality-foss-app/*, allow
+        - p, proj:project-quality-foss-app:project-read-only, exec, create, project-quality-foss-app/*, allow
+      groups:
+        - catenax-ng:product-quality-foss-app
+        - catenax-ng:release-management
+        - catenax-ng:test-management
