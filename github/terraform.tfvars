@@ -1905,6 +1905,26 @@ github_repositories = {
     codeowners_available : false
     codeowners : null
     archived : false
+  },
+  "product-federated-catalogue" : {
+    name : "product-federated-catalogue"
+    team_name : "product-essential-services"
+    description : ""
+    visibility : "private"
+    has_issues : false
+    has_discussions : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
   }
 }
 
@@ -2358,6 +2378,11 @@ github_repositories_teams = {
   "product-quality-foss-app-product-quality-foss-app-team" : {
     team_name : "product-quality-foss-app-team"
     repository : "product-quality-foss-app"
+    permission : "maintain"
+  },
+  "product-federated-catalogue-product-essential-services" : {
+    team_name : "product-essential-services"
+    repository : "product-federated-catalogue"
     permission : "maintain"
   }
 }
