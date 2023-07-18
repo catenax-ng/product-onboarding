@@ -203,6 +203,10 @@ github_teams = {
   "product-quality-foss-app-team" : {
     name : "product-quality-foss-app-team"
     description : ""
+  },
+  "product-architects-sustainability-team" : {
+    name : "product-architects-sustainability-team"
+    description : ""
   }
 }
 
@@ -1925,6 +1929,46 @@ github_repositories = {
     codeowners_available : false
     codeowners : null
     archived : false
+  },
+  "product-sustainability-kits" : {
+    name : "product-sustainability-kits"
+    team_name : "product-architects-sustainability-team"
+    description : ""
+    visibility : "private"
+    has_issues : false
+    has_discussions : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  },
+  "product-sustainability-standardization" : {
+    name : "product-sustainability-standardization"
+    team_name : "product-architects-sustainability-team"
+    description : ""
+    visibility : "private"
+    has_issues : false
+    has_discussions : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
   }
 }
 
@@ -2383,6 +2427,16 @@ github_repositories_teams = {
   "product-federated-catalogue-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-federated-catalogue"
+    permission : "maintain"
+  },
+  "product-sustainability-kits-product-architects-sustainability-team" : {
+    team_name : "product-architects-sustainability-team"
+    repository : "product-sustainability-kits"
+    permission : "maintain"
+  },
+  "product-sustainability-standardization-product-architects-sustainability-team" : {
+    team_name : "product-architects-sustainability-team"
+    repository : "product-sustainability-standardization"
     permission : "maintain"
   }
 }
