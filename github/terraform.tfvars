@@ -1813,7 +1813,7 @@ github_repositories = {
   "product-agents-edc" : {
     name : "product-agents-edc"
     team_name : "product-knowledge"
-    description : "EDC Agent Plane"
+    description : "EDC Agent Plane Extensions (Deprecated - use tx-knowledge-agents-edc instead) "
     visibility : "public"
     has_issues : false
     has_discussions : false
@@ -1833,7 +1833,7 @@ github_repositories = {
   "product-agents" : {
     name : "product-agents"
     team_name : "product-knowledge"
-    description : "Reference Implementations of Knowledge Agents"
+    description : "Reference Implementations of Knowledge Agents (Deprecated - use tx-knowledge-agents instead)"
     visibility : "public"
     has_issues : false
     has_discussions : false
@@ -1935,7 +1935,7 @@ github_repositories = {
     team_name : "product-architects-sustainability-team"
     description : ""
     visibility : "private"
-    has_issues : false
+    has_issues : true
     has_discussions : false
     homepage_url : ""
     topics : []
@@ -1955,7 +1955,7 @@ github_repositories = {
     team_name : "product-architects-sustainability-team"
     description : ""
     visibility : "private"
-    has_issues : false
+    has_issues : true
     has_discussions : false
     homepage_url : ""
     topics : []
