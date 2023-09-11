@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-bpdm
+  namespace: argocd
+spec:
+  sourceRepos:
+    - https://eclipse-tractusx.github.io/charts/dev
+  destinations:
+    - namespace: product-bpdm
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-bpdm.
+      policies:
+        - p, proj:project-bpdm:team-admin, applications, *, project-bpdm/*, allow
+        - p, proj:project-bpdm:team-admin, exec, create, project-bpdm/*, allow
+      groups:
+        - catenax-ng:product-bpdm
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-bpdm:read-only, applications, get, project-bpdm/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

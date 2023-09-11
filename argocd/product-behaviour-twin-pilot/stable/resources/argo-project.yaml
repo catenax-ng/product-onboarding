@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-behaviour-twin-pilot
+  namespace: argocd
+spec:
+  sourceRepos:
+    - https://eclipse-tractusx.github.io/charts/dev
+  destinations:
+    - namespace: product-behaviour-twin-pilot
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-behaviour-twin-pilot.
+      policies:
+        - p, proj:project-behaviour-twin-pilot:team-admin, applications, *, project-behaviour-twin-pilot/*, allow
+        - p, proj:project-behaviour-twin-pilot:team-admin, exec, create, project-behaviour-twin-pilot/*, allow
+      groups:
+        - catenax-ng:product-behaviour-twin-pilot
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-behaviour-twin-pilot:read-only, applications, get, project-behaviour-twin-pilot/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-value-added-service
+  namespace: argocd
+spec:
+  sourceRepos:
+    - https://eclipse-tractusx.github.io/charts/dev
+  destinations:
+    - namespace: product-value-added-service
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-value-added-service.
+      policies:
+        - p, proj:project-value-added-service:team-admin, applications, *, project-value-added-service/*, allow
+        - p, proj:project-value-added-service:team-admin, exec, create, project-value-added-service/*, allow
+      groups:
+        - catenax-ng:product-value-added-service
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-value-added-service:read-only, applications, get, project-value-added-service/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management
