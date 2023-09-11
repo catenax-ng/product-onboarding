@@ -17,5 +17,6 @@ resources:
   - ../../argocd/product-traceability-foss/read-write
   - ../../argocd/product-value-added-service/read-write
 
+  - helm-repo/eclipse-tractusx-helm-repo.yaml
   - storage-class/standard-ssd-lrs-retain.yaml
   - pull-secret/secret.yaml
