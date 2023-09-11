@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: eclipse-tractusx
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  name: 'Eclipse-TractusX Helm Repositoriy'
+  url: 'https://eclipse-tractusx.github.io/charts/dev'
+  type: 'helm'

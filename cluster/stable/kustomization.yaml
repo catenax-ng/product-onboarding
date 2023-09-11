@@ -3,19 +3,20 @@ kind: Kustomization
 
 resources:
   # Product Onboarding
-  - ../../argocd/product-behaviour-twin-pilot/read-write
-  - ../../argocd/product-bpdm/read-write
-  - ../../argocd/product-data-format-transformer/read-write
-  - ../../argocd/product-dft/read-write
-  - ../../argocd/product-edc/read-write
-  - ../../argocd/product-essential-services/read-write
-  - ../../argocd/product-item-relationship-service-frontend/read-write
-  - ../../argocd/product-managed-identity-wallets/read-write
-  - ../../argocd/product-material-pass/read-write
-  - ../../argocd/product-portal/read-write
-  - ../../argocd/product-semantics/read-write
-  - ../../argocd/product-traceability-foss/read-write
-  - ../../argocd/product-value-added-service/read-write
+  - ../../argocd/product-behaviour-twin-pilot/stable
+  - ../../argocd/product-bpdm/stable
+  - ../../argocd/product-data-format-transformer/stable
+  - ../../argocd/product-dft/stable
+  - ../../argocd/product-edc/stable
+  - ../../argocd/product-essential-services/stable
+  - ../../argocd/product-item-relationship-service-frontend/stable
+  - ../../argocd/product-managed-identity-wallets/stable
+  - ../../argocd/product-material-pass/stable
+  - ../../argocd/product-portal/stable
+  - ../../argocd/product-semantics/stable
+  - ../../argocd/product-traceability-foss/stable
+  - ../../argocd/product-value-added-service/stable
 
+  - helm-repo/eclipse-tractusx-helm-repo.yaml
   - storage-class/standard-ssd-lrs-retain.yaml
-  - pull-secret/secret.yaml
+#  - pull-secret/secret.yaml
