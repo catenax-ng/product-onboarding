@@ -603,7 +603,7 @@ github_repositories = {
     topics : []
     pages : {
       enabled : true
-      branch : "gh-pages"
+      branch : "sftp"
     }
     is_template : false
     uses_template : false
@@ -1793,7 +1793,7 @@ github_repositories = {
   "product-ontology" : {
     name : "product-ontology"
     team_name : "product-knowledge"
-    description : "Tractus-X Ontology"
+    description : "Catena-X Ontology"
     visibility : "public"
     has_issues : false
     has_discussions : false
@@ -1813,7 +1813,7 @@ github_repositories = {
   "product-agents-edc" : {
     name : "product-agents-edc"
     team_name : "product-knowledge"
-    description : "EDC Agent Plane Extensions (Deprecated - use tx-knowledge-agents-edc instead) "
+    description : "EDC Agent Plane Extensions (Deprecated - please use https://github.com/catenax-ng/tx-knowledge-agents-edc instead) "
     visibility : "public"
     has_issues : false
     has_discussions : false
@@ -1828,12 +1828,12 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   }
   "product-agents" : {
     name : "product-agents"
     team_name : "product-knowledge"
-    description : "Reference Implementations of Knowledge Agents (Deprecated - use tx-knowledge-agents instead)"
+    description : "Reference Implementations of Knowledge Agents (Deprecated - please use https://github.com/catenax-ng/tx-knowledge-agents instead)"
     visibility : "public"
     has_issues : false
     has_discussions : false
@@ -1848,7 +1848,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "product-bpdm-documentation" : {
     name : "product-bpdm-documentation"
