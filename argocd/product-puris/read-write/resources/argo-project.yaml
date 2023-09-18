@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-puris
+  namespace: argocd
+spec:
+  destinations:
+    - namespace: product-puris
+      server: https://kubernetes.default.svc
+    - namespace: product-puris-pen
+      server: https://kubernetes.default.svc
+  roles:
+    - name: team-admin
+      description: All access to applications inside project-puris.
+      policies:
+        - p, proj:project-puris:team-admin, applications, *, project-puris/*, allow
+        - p, proj:project-puris:team-admin, exec, create, project-puris/*, allow
+      groups:
+        - catenax-ng:product-puris
+    - name: read-only
+      description: Read only access to the project
+      policies:
+        - p, proj:project-puris:read-only, applications, get, project-puris/*, allow
+      groups:
+        - catenax-ng:release-management
+        - catenax-ng:test-management

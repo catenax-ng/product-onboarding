@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-puris
+  namespace: argocd
+spec:
+  description: Project for team product-puris
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: product-puris
+      server: https://kubernetes.default.svc
+    - namespace: product-puris-pen
+      server: https://kubernetes.default.svc
+  # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
+  namespaceResourceBlacklist:
+    - group: ''
+      kind: ResourceQuota
+    - group: ''
+      kind: LimitRange
+    - group: ''
+      kind: NetworkPolicy
+  roles:
+    - name: project-read-only
+      description: provide read-only access to project
+      policies:
+        - p, proj:project-puris:project-read-only, applications, get, project-puris/*, allow
+        - p, proj:project-puris:project-read-only, exec, create, project-puris/*, allow
+      groups:
+        - catenax-ng:product-puris
+        - catenax-ng:release-management
+        - catenax-ng:test-management
