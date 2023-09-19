@@ -6,6 +6,7 @@ metadata:
 spec:
   sourceRepos:
     - https://eclipse-tractusx.github.io/charts/dev
+    - https://github.com/catenax-ng/product-portal-tools
   destinations:
     - namespace: product-portal
       server: https://kubernetes.default.svc
