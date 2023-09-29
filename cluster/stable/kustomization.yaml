@@ -10,6 +10,7 @@ resources:
   - ../../argocd/product-edc/stable
   - ../../argocd/product-essential-services/stable
   - ../../argocd/product-item-relationship-service-frontend/stable
+  - ../../argocd/product-knowledge/stable
   - ../../argocd/product-managed-identity-wallets/stable
   - ../../argocd/product-material-pass/stable
   - ../../argocd/product-portal/stable
