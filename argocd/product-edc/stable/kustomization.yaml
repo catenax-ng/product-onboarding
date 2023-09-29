@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - ../base-read-only
-  - resources/avp-secret.yaml
 
 patchesStrategicMerge:
   - resources/argo-project.yaml
