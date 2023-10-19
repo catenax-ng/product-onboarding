@@ -11,6 +11,7 @@ resources:
   - resources/avp-secrets/avp-secret-cert-manager.yaml
 #  - resources/avp-secrets/avp-secret-default.yaml # currently no ApplicationSet used AVP here
   - resources/avp-secrets/avp-secret-monitoring.yaml
+  - resources/avp-secrets/avp-secret-kubeapps.yaml
   - resources/avp-secrets/avp-secret-kyverno.yaml
   - resources/avp-secrets/avp-secret-logging.yaml
   - resources/avp-secrets/avp-secret-maintenance-dashboard-app.yaml
