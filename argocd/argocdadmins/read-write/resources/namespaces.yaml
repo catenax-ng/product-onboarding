@@ -16,6 +16,11 @@ metadata:
 apiVersion: v1
 kind: Namespace
 metadata:
+  name: kubeapps
+---
+apiVersion: v1
+kind: Namespace
+metadata:
   name: logging
 ---
 apiVersion: v1
