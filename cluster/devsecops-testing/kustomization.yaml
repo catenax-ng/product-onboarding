@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   # Product Onboarding
   - ../../argocd/product-example/read-write
+  - ../../argocd/product-portal/read-write
