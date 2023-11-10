@@ -1,0 +1,21 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: require-etx-helm-repository-usage
+spec:
+  validationFailureAction: Enforce
+  background: true
+  rules:
+    - name: helm-repository
+      match:
+        any:
+          - resources:
+              kinds:
+                - Application
+      validate:
+        message: >-
+          Using sources other than Eclipse-Tractusx Helm Repository is not allowed.
+        anyPattern:
+          spec:
+            source:
+              repoURL: https://eclipse-tractusx.github.io/charts/dev
