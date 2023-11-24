@@ -5,4 +5,6 @@ resources:
   # Product Onboarding
   - ../../argocd/product-example/read-write
   - ../../argocd/product-portal/read-write
+
+# Kyverno policies (Audit mode)
   - ../../kyverno/policies-audit

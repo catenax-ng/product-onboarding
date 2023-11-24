@@ -33,6 +33,9 @@ resources:
   - storage-class/standard-ssd-lrs-retain.yaml
   - pull-secret/secret.yaml
 
+# Kyverno policies (Audit mode)
+  - ../../kyverno/policies-audit
+
 #patchesStrategicMerge:
 #  - argocd-resource-patches/project-traceability-irs.yaml
 #  - argocd-resource-patches/argo-notifications-cm.yaml

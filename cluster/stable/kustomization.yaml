@@ -21,3 +21,6 @@ resources:
   - helm-repo/eclipse-tractusx-helm-repo.yaml
   - storage-class/standard-ssd-lrs-retain.yaml
 #  - pull-secret/secret.yaml
+
+# Kyverno policies (Audit mode)
+  - ../../kyverno/policies-audit
