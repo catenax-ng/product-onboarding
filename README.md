@@ -10,6 +10,8 @@ The [argocd](argocd) folder contains all available product resource files.
 
 The [cluster](cluster) folder contains all available clusters, in the `cluster/<CLUSTERNAME>/kustomization.yaml` we describe each product that is deployed in the cluster based on their permission level.
 
+The [docs/guides](docs/guides) folder contains all necessary guides to use our cluster environment.
+
 More Information can be found under `argocd` Folder: [README.md](argocd/README.md)
 
 ### GitHub related parts
