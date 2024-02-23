@@ -223,6 +223,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -246,6 +247,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -269,6 +271,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -289,6 +292,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -309,6 +313,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -329,6 +334,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -349,6 +355,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -373,6 +380,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -397,6 +405,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -417,6 +426,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -437,6 +447,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -457,6 +468,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -484,6 +496,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -504,6 +517,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -524,6 +538,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -544,6 +559,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -564,6 +580,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -584,6 +601,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -604,6 +622,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "sftp"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -624,6 +643,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -644,6 +664,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -664,6 +685,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -684,6 +706,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -707,6 +730,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -727,6 +751,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -747,6 +772,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -767,6 +793,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -787,6 +814,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -807,6 +835,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -827,6 +856,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -847,6 +877,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -867,6 +898,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -887,6 +919,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -907,6 +940,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -927,6 +961,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : true
     uses_template : false
@@ -947,6 +982,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -967,6 +1003,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -987,6 +1024,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : true
     uses_template : false
@@ -1007,6 +1045,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : true
@@ -1030,6 +1069,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1050,6 +1090,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1070,6 +1111,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1090,6 +1132,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1113,6 +1156,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1136,6 +1180,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1156,6 +1201,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1176,6 +1222,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1196,6 +1243,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1216,6 +1264,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1236,6 +1285,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1256,6 +1306,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1263,7 +1314,7 @@ github_repositories = {
     codeowners_available : true
     codeowners : {
       review_count : 1
-      pattern : "main"
+      pattern : "_main"
     }
     archived : false
   },
@@ -1279,6 +1330,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1299,6 +1351,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1319,6 +1372,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1339,6 +1393,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1359,6 +1414,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "main"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1379,6 +1435,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : true
@@ -1402,6 +1459,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1422,6 +1480,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1442,6 +1501,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1455,13 +1515,14 @@ github_repositories = {
     team_name : "product-behaviour-twin-pilot"
     description : ""
     visibility : "public"
-    has_issues : false
+    has_issues : true
     has_discussions : false
     homepage_url : ""
     topics : []
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1482,6 +1543,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1502,6 +1564,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1522,6 +1585,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1542,6 +1606,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1562,6 +1627,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1582,6 +1648,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1602,6 +1669,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1622,6 +1690,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1642,6 +1711,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1662,6 +1732,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1677,11 +1748,12 @@ github_repositories = {
     visibility : "public"
     has_issues : false
     has_discussions : false
-    homepage_url : ""
+    homepage_url : "https://catenax-ng.github.io/product-portal-swagger/"
     topics : []
     pages : {
-      enabled : false
-      branch : ""
+      enabled : true
+      branch : "main"
+      build_type: "workflow"
     }
     is_template : false
     uses_template : false
@@ -1702,6 +1774,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1722,6 +1795,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1742,6 +1816,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1762,6 +1837,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1782,6 +1858,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1800,8 +1877,9 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
+      enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1822,6 +1900,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1842,6 +1921,7 @@ github_repositories = {
     pages : {
       enabled : true
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1862,6 +1942,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1882,6 +1963,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1902,6 +1984,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1922,6 +2005,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1942,6 +2026,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false
@@ -1962,6 +2047,7 @@ github_repositories = {
     pages : {
       enabled : false
       branch : "gh-pages"
+      build_type: "legacy"
     }
     is_template : false
     uses_template : false

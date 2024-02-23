@@ -42,6 +42,7 @@ resource "github_repository" "repositories" {
   dynamic "pages" {
     for_each = each.value.pages.enabled ? [true] : []
     content {
+      build_type = each.value.pages.build_type
       source {
         branch = each.value.pages.branch
       }
