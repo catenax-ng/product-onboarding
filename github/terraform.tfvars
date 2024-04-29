@@ -2055,7 +2055,7 @@ github_repositories = {
     codeowners_available : false
     codeowners : null
     archived : false
-  }
+  },
   "product-behaviour-twin-demo" : {
     name : "product-behaviour-twin-demo"
     team_name : "product-behaviour-twin-pilot"
@@ -2550,5 +2550,5 @@ github_repositories_teams = {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-behaviour-twin-demo"
     permission : "maintain"
-  },
+  }
 }
