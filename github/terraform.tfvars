@@ -198,7 +198,7 @@ github_teams = {
   },
   "product-cgi-dcm-foss" : {
     name : "product-dcm"
-    description : "Content team for tx-dcm-backend"
+    description : "Content team for tx-demand-capacity-mgmt"
   },
   "product-quality-foss-app-team" : {
     name : "product-quality-foss-app-team"
@@ -1371,7 +1371,7 @@ github_repositories = {
     topics : []
     pages : {
       enabled : true
-      branch : "main"
+      branch : "gh-pages"
       build_type: "legacy"
     }
     is_template : false
@@ -2056,6 +2056,27 @@ github_repositories = {
     codeowners : null
     archived : false
   }
+  "product-behaviour-twin-demo" : {
+    name : "product-behaviour-twin-demo"
+    team_name : "product-behaviour-twin-pilot"
+    description : ""
+    visibility : "public"
+    has_issues : false
+    has_discussions : false
+    homepage_url : ""
+    topics : []
+    pages : {
+      enabled : false
+      branch : "gh-pages"
+      build_type: "legacy"
+    }
+    is_template : false
+    uses_template : false
+    template : null
+    codeowners_available : false
+    codeowners : null
+    archived : false
+  }
 }
 
 github_repositories_teams = {
@@ -2524,5 +2545,10 @@ github_repositories_teams = {
     team_name : "product-architects-sustainability-team"
     repository : "product-sustainability-standardization"
     permission : "maintain"
-  }
+  },
+  "product-behaviour-twin-demo-product-behaviour-twin-pilot" : {
+    team_name : "product-behaviour-twin-pilot"
+    repository : "product-behaviour-twin-demo"
+    permission : "maintain"
+  },
 }
