@@ -236,7 +236,7 @@ resource "vault_token" "portal-bdrs-token" {
   policies = [ "portal-bdrs-ro" ]
 
   renewable = true
-  ttl = "30d"
+  ttl = "768h"
 
   metadata = {
     "purpose" = "bdrs vault access"
