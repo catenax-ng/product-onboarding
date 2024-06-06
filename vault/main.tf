@@ -220,3 +220,34 @@ resource "vault_jwt_auth_backend_role" "oidc_auth_roles" {
   role_name      = each.value.github_team
   bound_claims   = { "groups" : "catenax-ng:${each.value.github_team}" }
 }
+
+resource "vault_policy" "bdrs-vault-policy" {
+  name   = "portal-bdrs-ro"
+  policy = <<EOT
+path "portal/*" {
+  capabilities = [ "read" ]
+}
+EOT
+}
+
+resource "vault_token" "portal-bdrs-token" {
+  display_name = "portal-bdrs-vault-token"
+
+  policies = [ "portal-bdrs-ro" ]
+
+  renewable = true
+  ttl = "768h"
+
+  metadata = {
+    "purpose" = "bdrs vault access"
+  }
+}
+
+resource "vault_generic_secret" "portal-vault-token-secret" {
+  path      = "portal/bdrs-vault"
+  data_json = <<EOT
+{
+  "token":   "${vault_token.portal-bdrs-token.client_token}"
+}
+EOT
+}
