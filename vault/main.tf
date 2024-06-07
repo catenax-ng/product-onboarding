@@ -238,6 +238,8 @@ resource "vault_token" "portal-bdrs-token" {
   renewable = true
   ttl = "768h"
 
+  no_parent = true
+
   metadata = {
     "purpose" = "bdrs vault access"
   }
