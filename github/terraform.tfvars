@@ -2066,8 +2066,8 @@ github_repositories = {
     homepage_url : ""
     topics : []
     pages : {
-      enabled : false
-      branch : "gh-pages"
+      enabled : true
+      branch : "event"
       build_type: "legacy"
     }
     is_template : false
