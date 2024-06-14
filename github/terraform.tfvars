@@ -39,7 +39,7 @@
 #  "playground-target-argocdadmins" : {
 #    team_name : "<new-team-name>"
 #    repository : "<new-repository-name>"
-#    permission : "maintain" # default should "maintain" execpt some special permission is needed
+#    permission : "pull" # default should "pull" execpt some special permission is needed
 #  }
 #}
 
@@ -2084,47 +2084,47 @@ github_repositories_teams = {
   "product-puris-backend-product-puris" : {
     team_name : "product-puris"
     repository : "product-puris-backend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-puris-frontend-product-puris" : {
     team_name : "product-puris"
     repository : "product-puris-frontend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-bpdm-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "product-bpdm"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-bpdm-pool-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "product-bpdm-pool"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-bpdm-gate-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "product-bpdm-gate"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-bpdm-common-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "product-bpdm-common"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-bpdm-cdq-bridge-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "product-bpdm-cdq-bridge"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-bpdm-env-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "product-bpdm-env"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-semantics-product-semantics" : {
     team_name : "product-semantics"
     repository : "product-semantics"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-portal-frontend-product-portal" : {
     team_name : "product-portal"
@@ -2139,7 +2139,7 @@ github_repositories_teams = {
   "product-innovation-radar-product-innovation-radar" : {
     team_name : "product-innovation-radar"
     repository : "product-innovation-radar"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-portal-backend-product-portal" : {
     team_name : "product-portal"
@@ -2149,22 +2149,22 @@ github_repositories_teams = {
   "catenax-at-home-catenax-at-home" : {
     team_name : "product-catenax-at-home"
     repository : "catenax-at-home"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-catena-x-standardization-product-standardization" : {
     team_name : "product-standardization"
     repository : "product-catena-x-standardization"
-    permission : "maintain"
+    permission : "pull"
   },
   "catenax-at-home-product-edc" : {
     team_name : "product-edc"
     repository : "catenax-at-home"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-core-schemas-cx-core-schemas" : {
     team_name : "cx-core-schemas"
     repository : "product-core-schemas"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-portal-cd-product-portal" : {
     team_name : "product-portal"
@@ -2174,47 +2174,47 @@ github_repositories_teams = {
   "DataSpaceConnector-product-managed-identity-wallets" : {
     team_name : "product-managed-identity-wallets"
     repository : "DataSpaceConnector"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-portal-common-assets-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-common-assets"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-core-managed-identity-wallets-product-managed-identity-wallets" : {
     team_name : "product-managed-identity-wallets"
     repository : "product-core-managed-identity-wallets"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-dft-backend-product-dft" : {
     team_name : "product-dft"
     repository : "product-dft-backend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-dft-frontend-product-dft" : {
     team_name : "product-dft"
     repository : "product-dft-frontend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-sd-hub-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-sd-hub"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-omejdn-server-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-omejdn-server"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-DAPS-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-DAPS"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-daps-registration-service-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-daps-registration-service"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-item-relationship-service-product-traceability-irs" : {
     team_name : "product-traceability-irs"
@@ -2224,7 +2224,7 @@ github_repositories_teams = {
   "product-esc-backbone-product-esc-backbone" : {
     team_name : "product-esc-backbone"
     repository : "product-esc-backbone"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-traceability-foss-frontend-product-traceability-foss" : {
     team_name : "product-traceability-foss"
@@ -2239,42 +2239,42 @@ github_repositories_teams = {
   "product-esc-backbone-code-product-esc-backbone" : {
     team_name : "product-esc-backbone"
     repository : "product-esc-backbone-code"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-explorer-product-explorer" : {
     team_name : "product-explorer"
     repository : "product-explorer"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-core-managed-identity-wallets-cd-product-managed-identity-wallets" : {
     team_name : "product-managed-identity-wallets"
     repository : "product-core-managed-identity-wallets-cd"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-behaviour-twin-pilot-product-behaviour-twin-pilot" : {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-behaviour-twin-pilot"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-behaviour-twin-pilot-private-product-behaviour-twin-pilot" : {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-behaviour-twin-pilot-private"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-value-added-service-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "product-value-added-service"
-    permission : "maintain"
+    permission : "pull"
   },
   "foss-example-team-foss" : {
     team_name : "team-foss"
     repository : "foss-example"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-idses-frontend-apps-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-idses-frontend-apps"
-    permission : "maintain"
+    permission : "pull"
   },
   "k8s-cluster-stack-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2289,22 +2289,22 @@ github_repositories_teams = {
   "product-edc-product-edc" : {
     team_name : "product-edc"
     repository : "product-edc"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-edc-product-managed-identity-wallets" = {
     team_name : "product-managed-identity-wallets"
     repository : "product-edc"
-    permission : "maintain"
+    permission : "pull"
   },
   "k8s-helm-example-product-team-example" : {
     team_name : "product-team-example"
     repository : "k8s-helm-example"
-    permission : "maintain"
+    permission : "pull"
   },
   "catenax-ng.github.io-team-foss" : {
     team_name : "team-foss"
     repository : "catenax-ng.github.io"
-    permission : "maintain"
+    permission : "pull"
   },
   "catenax-ng.github.io-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2314,17 +2314,17 @@ github_repositories_teams = {
   "product-test-data-generator-product-test-data-generator" : {
     team_name : "product-test-data-generator"
     repository : "product-test-data-generator"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-vas-country-risk-frontend-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "product-vas-country-risk-frontend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-knowlege-product-knowledge" : {
     team_name : "product-knowledge"
     repository : "product-knowledge"
-    permission : "maintain"
+    permission : "pull"
   },
   "gh-org-checks-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2334,7 +2334,7 @@ github_repositories_teams = {
   "product-battery-passport-consumer-app-product-material-pass" : {
     team_name : "product-material-pass"
     repository : "product-battery-passport-consumer-app"
-    permission : "maintain"
+    permission : "pull"
   },
   "maintenance-dashboard-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2344,32 +2344,32 @@ github_repositories_teams = {
   "product-simple-configurator-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-simple-configurator"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-vas-fraud-api-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "product-vas-fraud-api"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-vas-fraud-workers-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "product-vas-fraud-workers"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-vas-fraud-dashboard-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "product-vas-fraud-dashboard"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-vas-fraud-dags-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "product-vas-fraud-dags"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-vas-fraud-cd-product-value-added-service" : {
     team_name : "product-value-added-service"
     repository : "product-vas-fraud-cd"
-    permission : "maintain"
+    permission : "pull"
   },
   "catena-x-release-deployment-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2379,12 +2379,12 @@ github_repositories_teams = {
   "catena-x-release-deployment-release-management" : {
     team_name : "release-management"
     repository : "catena-x-release-deployment"
-    permission : "maintain"
+    permission : "pull"
   },
   "catena-x-release-deployment-test-management" : {
     team_name : "test-management"
     repository : "catena-x-release-deployment"
-    permission : "maintain"
+    permission : "pull"
   },
   "catena-x-release-deployment-product-portal" : {
     team_name : "product-portal"
@@ -2414,57 +2414,57 @@ github_repositories_teams = {
   "product-registry-twin-check-product-registry-twin-check" : {
     team_name : "product-registry-twin-check"
     repository : "product-registry-twin-check"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-autosetup-backend-product-dft" : {
     team_name : "product-dft"
     repository : "product-autosetup-backend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-business-partner-certificates-product-business-partner-certificates" : {
     team_name : "product-business-partner-certificates"
     repository : "product-business-partner-certificates"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-et-demonstrators-product-et-demonstrators" : {
     team_name : "product-et-demonstrators"
     repository : "product-et-demonstrators"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-item-relationship-service-frontend-product-item-relationship-service-frontend" : {
     team_name : "product-item-relationship-service-frontend"
     repository : "product-item-relationship-service-frontend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-esc-backbone-blockexplorer-product-esc-backbone" : {
     team_name : "product-esc-backbone"
     repository : "product-esc-backbone-blockexplorer"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-oem-hi-app-product-behaviour-twin-pilot" : {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-oem-hi-app"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-oem-rul-backend-product-behaviour-twin-pilot" : {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-oem-rul-backend"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-behaviour-twin-libraries-product-behaviour-twin-pilot" : {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-behaviour-twin-libraries"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-r-strategy-assistant-product-r-strategy-assistant" : {
     team_name : "product-r-strategy-assistant"
     repository : "product-r-strategy-assistant"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-behaviour-twin-minio-product-behaviour-twin-minio" : {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-behaviour-twin-minio"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-onboarding-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2479,7 +2479,7 @@ github_repositories_teams = {
   "product-portal-swagger-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-swagger"
-    permission : "maintain"
+    permission : "pull"
   },
   "eclipse-tractusx.github.io-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2489,37 +2489,37 @@ github_repositories_teams = {
   "eclipse-tractusx.github.io-traceability-spec" : {
     team_name : "traceability-spec"
     repository : "eclipse-tractusx.github.io"
-    permission : "maintain"
+    permission : "pull"
   }
   "product-portal-tools-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-tools"
-    permission : "maintain"
+    permission : "pull"
   }
   "product-data-governance-product-data-governance" : {
     team_name : "product-data-governance"
     repository : "product-data-governance"
-    permission : "maintain"
+    permission : "pull"
   }
   "product-ontology-product-knowledge" : {
     team_name : "product-knowledge"
     repository : "product-ontology"
-    permission : "maintain"
+    permission : "pull"
   }
   "product-agents-edc-product-knowledge" : {
     team_name : "product-knowledge"
     repository : "product-agents-edc"
-    permission : "maintain"
+    permission : "pull"
   }
   "product-agents-product-knowledge" : {
     team_name : "product-knowledge"
     repository : "product-agents"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-bpdm-documentation-bpdm-documentation" : {
     team_name : "bpdm-documentation"
     repository : "product-bpdm-documentation"
-    permission : "maintain"
+    permission : "pull"
   },
   ".github-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2529,26 +2529,26 @@ github_repositories_teams = {
   "product-quality-foss-app-product-quality-foss-app-team" : {
     team_name : "product-quality-foss-app-team"
     repository : "product-quality-foss-app"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-federated-catalogue-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-federated-catalogue"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-sustainability-kits-product-architects-sustainability-team" : {
     team_name : "product-architects-sustainability-team"
     repository : "product-sustainability-kits"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-sustainability-standardization-product-architects-sustainability-team" : {
     team_name : "product-architects-sustainability-team"
     repository : "product-sustainability-standardization"
-    permission : "maintain"
+    permission : "pull"
   },
   "product-behaviour-twin-demo-product-behaviour-twin-pilot" : {
     team_name : "product-behaviour-twin-pilot"
     repository : "product-behaviour-twin-demo"
-    permission : "maintain"
+    permission : "pull"
   }
 }
