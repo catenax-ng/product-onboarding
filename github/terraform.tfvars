@@ -2179,7 +2179,7 @@ github_repositories_teams = {
   "product-portal-common-assets-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-common-assets"
-    permission : "pull"
+    permission : "maintain"
   },
   "product-core-managed-identity-wallets-product-managed-identity-wallets" : {
     team_name : "product-managed-identity-wallets"
@@ -2394,22 +2394,22 @@ github_repositories_teams = {
   "catena-x-release-deployment-product-semantics" : {
     team_name : "product-semantics"
     repository : "catena-x-release-deployment"
-    permission : "push"
+    permission : "pull"
   },
   "catena-x-release-deployment-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "catena-x-release-deployment"
-    permission : "push"
+    permission : "pull"
   },
   "catena-x-release-deployment-product-bpdm" : {
     team_name : "product-bpdm"
     repository : "catena-x-release-deployment"
-    permission : "push"
+    permission : "pull"
   },
   "catena-x-release-deployment-product-managed-identity-wallets" : {
     team_name : "product-managed-identity-wallets"
     repository : "catena-x-release-deployment"
-    permission : "push"
+    permission : "pull"
   },
   "product-registry-twin-check-product-registry-twin-check" : {
     team_name : "product-registry-twin-check"
@@ -2479,7 +2479,7 @@ github_repositories_teams = {
   "product-portal-swagger-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-swagger"
-    permission : "pull"
+    permission : "maintain"
   },
   "eclipse-tractusx.github.io-argocdadmins" : {
     team_name : "argocdadmins"
@@ -2494,7 +2494,7 @@ github_repositories_teams = {
   "product-portal-tools-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-tools"
-    permission : "pull"
+    permission : "maintain"
   }
   "product-data-governance-product-data-governance" : {
     team_name : "product-data-governance"
