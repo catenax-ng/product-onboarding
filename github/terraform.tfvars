@@ -529,7 +529,7 @@ github_repositories = {
   "product-portal-common-assets" : {
     name : "product-portal-common-assets"
     team_name : "product-portal"
-    description : "Assets used by the Catena-X Portal"
+    description : "Assets used by the Catena-X Portal - DEPRECATED"
     visibility : "public"
     has_issues : false
     has_discussions : false
@@ -2504,7 +2504,7 @@ github_repositories_teams = {
   "product-ontology-product-knowledge" : {
     team_name : "product-knowledge"
     repository : "product-ontology"
-    permission : "pull"
+    permission : "maintain"
   }
   "product-agents-edc-product-knowledge" : {
     team_name : "product-knowledge"
